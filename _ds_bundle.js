@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"FUCKBOYDesignSystem_007b99","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"ICON_PATHS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Rule","sourcePath":"components/core/Rule.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"WarningNotice","sourcePath":"components/feedback/WarningNotice.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"ChapterCard","sourcePath":"components/learning/ChapterCard.jsx"},{"name":"ChatBubble","sourcePath":"components/learning/ChatBubble.jsx"},{"name":"ChoiceOption","sourcePath":"components/learning/ChoiceOption.jsx"},{"name":"LockedPanel","sourcePath":"components/learning/LockedPanel.jsx"},{"name":"PillChoice","sourcePath":"components/learning/PillChoice.jsx"},{"name":"Redacted","sourcePath":"components/learning/Redacted.jsx"},{"name":"ScoreMeter","sourcePath":"components/learning/ScoreMeter.jsx"},{"name":"Stamp","sourcePath":"components/learning/Stamp.jsx"},{"name":"SwipeCard","sourcePath":"components/learning/SwipeCard.jsx"},{"name":"ProgressRail","sourcePath":"components/navigation/ProgressRail.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"e2bbe2a7a11a","components/core/Button.jsx":"cd305263f1a5","components/core/Card.jsx":"13072fdf5436","components/core/Icon.jsx":"6c93ab88a0b7","components/core/IconButton.jsx":"a7d5259ce0ab","components/core/Rule.jsx":"c822fccc941a","components/core/Tag.jsx":"7618278547c5","components/feedback/Dialog.jsx":"12693b085b46","components/feedback/Toast.jsx":"7cc4cbe87ac4","components/feedback/Tooltip.jsx":"d2b83a92f5bf","components/feedback/WarningNotice.jsx":"76c4b4cbfb27","components/forms/Checkbox.jsx":"306b341d4910","components/forms/Input.jsx":"ebfceb11a3bf","components/forms/Radio.jsx":"b52970611868","components/forms/Select.jsx":"c47ed9223855","components/forms/Switch.jsx":"7aa168d60e0a","components/forms/Textarea.jsx":"b6943173a1b5","components/learning/ChapterCard.jsx":"6832858fd8a3","components/learning/ChatBubble.jsx":"d5f7c0a0787f","components/learning/ChoiceOption.jsx":"303f03f2d096","components/learning/LockedPanel.jsx":"0564ea704980","components/learning/PillChoice.jsx":"2a6fded48305","components/learning/Redacted.jsx":"3861851c9c2d","components/learning/ScoreMeter.jsx":"e6f01ae8f949","components/learning/Stamp.jsx":"15bbe8ab930f","components/learning/SwipeCard.jsx":"e8157921eee2","components/navigation/ProgressRail.jsx":"94d34157f3bf","components/navigation/Tabs.jsx":"f1e5e9d97f4a","ui_kits/elearning-mobile/MobileApp.jsx":"69f145d366aa","ui_kits/elearning-mobile/MobileScreens.jsx":"b134e944b275","ui_kits/elearning-mobile/ios-frame.jsx":"24642b887be3","ui_kits/elearning/App.jsx":"63292afd64f6","ui_kits/elearning/ChapterIndex.jsx":"a1ee582a7f0b","ui_kits/elearning/ChapterScreen.jsx":"b8273e6ee13a","ui_kits/elearning/CoverScreen.jsx":"6c1abc17e096","ui_kits/elearning/HeavenScreen.jsx":"ec9508eb332d","ui_kits/elearning/MetaScreens.jsx":"690c61ace7ae","ui_kits/elearning/OverviewScreen.jsx":"dd95dc968800","ui_kits/elearning/Shell.jsx":"a24dbc63d4fb","ui_kits/elearning/SpecialBlocks.jsx":"60e568abe75b","ui_kits/elearning/blocks.jsx":"91c4720bf176","ui_kits/elearning/content/chapters-a.js":"6dad9cccee9d","ui_kits/elearning/content/chapters-b.js":"f25fadea3a55","ui_kits/elearning/content/chapters-c.js":"7c8300700432","ui_kits/elearning/content/chapters-d.js":"a06aff8a398f","ui_kits/elearning/content/chapters-e.js":"c1db2514d07e","ui_kits/elearning/content/chapters-f.js":"d72bfa385d8c","ui_kits/elearning/content/competences.js":"0ac676887570","ui_kits/elearning/content/safety.js":"80eb6d73e4cd","ui_kits/elearning/data.js":"8ae6c5325dcc","ui_kits/elearning/store.js":"47dd27c40051"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"FUCKBOYDesignSystem_007b99","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"ICON_PATHS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Rule","sourcePath":"components/core/Rule.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"WarningNotice","sourcePath":"components/feedback/WarningNotice.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"ChapterCard","sourcePath":"components/learning/ChapterCard.jsx"},{"name":"ChatBubble","sourcePath":"components/learning/ChatBubble.jsx"},{"name":"ChoiceOption","sourcePath":"components/learning/ChoiceOption.jsx"},{"name":"LockedPanel","sourcePath":"components/learning/LockedPanel.jsx"},{"name":"PillChoice","sourcePath":"components/learning/PillChoice.jsx"},{"name":"Redacted","sourcePath":"components/learning/Redacted.jsx"},{"name":"ScoreMeter","sourcePath":"components/learning/ScoreMeter.jsx"},{"name":"Stamp","sourcePath":"components/learning/Stamp.jsx"},{"name":"SwipeCard","sourcePath":"components/learning/SwipeCard.jsx"},{"name":"ProgressRail","sourcePath":"components/navigation/ProgressRail.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"e2bbe2a7a11a","components/core/Button.jsx":"cd305263f1a5","components/core/Card.jsx":"13072fdf5436","components/core/Icon.jsx":"6c93ab88a0b7","components/core/IconButton.jsx":"a7d5259ce0ab","components/core/Rule.jsx":"c822fccc941a","components/core/Tag.jsx":"7618278547c5","components/feedback/Dialog.jsx":"12693b085b46","components/feedback/Toast.jsx":"7cc4cbe87ac4","components/feedback/Tooltip.jsx":"d2b83a92f5bf","components/feedback/WarningNotice.jsx":"76c4b4cbfb27","components/forms/Checkbox.jsx":"306b341d4910","components/forms/Input.jsx":"ebfceb11a3bf","components/forms/Radio.jsx":"b52970611868","components/forms/Select.jsx":"c47ed9223855","components/forms/Switch.jsx":"7aa168d60e0a","components/forms/Textarea.jsx":"b6943173a1b5","components/learning/ChapterCard.jsx":"6832858fd8a3","components/learning/ChatBubble.jsx":"d5f7c0a0787f","components/learning/ChoiceOption.jsx":"303f03f2d096","components/learning/LockedPanel.jsx":"0564ea704980","components/learning/PillChoice.jsx":"2a6fded48305","components/learning/Redacted.jsx":"3861851c9c2d","components/learning/ScoreMeter.jsx":"e6f01ae8f949","components/learning/Stamp.jsx":"15bbe8ab930f","components/learning/SwipeCard.jsx":"e8157921eee2","components/navigation/ProgressRail.jsx":"94d34157f3bf","components/navigation/Tabs.jsx":"f1e5e9d97f4a","ui_kits/elearning-mobile/MobileApp.jsx":"a75caaff4915","ui_kits/elearning-mobile/MobileScreens.jsx":"3e0f2dbbe53b","ui_kits/elearning-mobile/ios-frame.jsx":"24642b887be3","ui_kits/elearning/App.jsx":"63292afd64f6","ui_kits/elearning/ChapterIndex.jsx":"14e4556f585f","ui_kits/elearning/ChapterScreen.jsx":"34418b6f2978","ui_kits/elearning/CoverScreen.jsx":"ce0e07cedb8d","ui_kits/elearning/HeavenScreen.jsx":"4a603d392a69","ui_kits/elearning/MetaScreens.jsx":"690c61ace7ae","ui_kits/elearning/OverviewScreen.jsx":"28304899f3f6","ui_kits/elearning/Shell.jsx":"c24f12acd9ca","ui_kits/elearning/SpecialBlocks.jsx":"60e568abe75b","ui_kits/elearning/blocks.jsx":"91c4720bf176","ui_kits/elearning/content/chapters-a.js":"eadb68a16739","ui_kits/elearning/content/chapters-b.js":"ac933858a1bf","ui_kits/elearning/content/chapters-c.js":"0ab92558ff6d","ui_kits/elearning/content/chapters-d.js":"777460b1fb16","ui_kits/elearning/content/chapters-e.js":"6d1bd4fbe2a4","ui_kits/elearning/content/chapters-f.js":"d72bfa385d8c","ui_kits/elearning/content/competences.js":"0ac676887570","ui_kits/elearning/content/safety.js":"80eb6d73e4cd","ui_kits/elearning/data.js":"12109ff68afb","ui_kits/elearning/store.js":"47dd27c40051"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -2520,8 +2520,8 @@ function TabBar({
         flexDirection: 'column',
         alignItems: 'center',
         gap: '5px',
-        padding: '11px 4px 7px',
-        minHeight: '52px',
+        padding: '13px 4px 9px',
+        minHeight: '60px',
         background: 'transparent',
         border: 0,
         cursor: 'pointer',
@@ -2529,13 +2529,13 @@ function TabBar({
       }
     }, /*#__PURE__*/React.createElement(Icon, {
       name: t.icon,
-      size: 19
+      size: 22
     }), /*#__PURE__*/React.createElement("span", {
       style: {
         fontFamily: 'var(--font-condensed)',
-        fontSize: '9px',
+        fontSize: '10px',
         fontWeight: 600,
-        letterSpacing: '0.12em',
+        letterSpacing: '0.1em',
         textTransform: 'uppercase'
       }
     }, t.label));
@@ -2551,7 +2551,7 @@ function TopBar({
   return /*#__PURE__*/React.createElement("header", {
     style: {
       flex: 'none',
-      height: '52px',
+      height: '58px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -2574,9 +2574,9 @@ function TopBar({
   }) : null, inCh ? /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '11px',
+      fontSize: '13px',
       fontWeight: 600,
-      letterSpacing: '0.14em',
+      letterSpacing: '0.12em',
       textTransform: 'uppercase',
       color: 'var(--bordeaux-400)',
       flex: 'none'
@@ -2584,9 +2584,9 @@ function TopBar({
   }, "Kap. ", ch ? ch.number : '') : null, /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '12px',
+      fontSize: '14px',
       fontWeight: 600,
-      letterSpacing: '0.14em',
+      letterSpacing: '0.1em',
       textTransform: 'uppercase',
       color: 'var(--text-secondary)',
       overflow: 'hidden',
@@ -2600,7 +2600,17 @@ function TopBar({
     onClick: () => go('settings')
   }));
 }
+function useBare() {
+  const [bare, setBare] = React.useState(() => window.innerWidth < 560);
+  React.useEffect(() => {
+    const on = () => setBare(window.innerWidth < 560);
+    window.addEventListener('resize', on);
+    return () => window.removeEventListener('resize', on);
+  }, []);
+  return bare;
+}
 function MobileApp() {
+  const noFrame = useBare();
   const CH = window.FBChapters;
   const [store, setStore] = React.useState(() => window.FBStore.load());
   const [screen, setScreen] = React.useState('cover');
@@ -2670,7 +2680,7 @@ function MobileApp() {
       flexDirection: 'column',
       height: '100%',
       background: 'var(--bg-page)',
-      paddingTop: '54px'
+      paddingTop: noFrame ? 'env(safe-area-inset-top, 0px)' : '54px'
     }
   }, !bare ? /*#__PURE__*/React.createElement(TopBar, {
     screen: screen,
@@ -2714,6 +2724,15 @@ function MobileApp() {
     screen: screen,
     go: go
   }) : null);
+  if (noFrame) {
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'fixed',
+        inset: 0,
+        background: 'var(--bg-page)'
+      }
+    }, body);
+  }
   return /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
@@ -2748,7 +2767,7 @@ const {
   Toast
 } = window.FUCKBOYDesignSystem_007b99;
 const PAD = {
-  padding: '0 20px'
+  padding: '0 22px'
 };
 function MKicker({
   children,
@@ -2757,9 +2776,9 @@ function MKicker({
   return /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '10px',
+      fontSize: '12px',
       fontWeight: 600,
-      letterSpacing: '0.16em',
+      letterSpacing: '0.14em',
       textTransform: 'uppercase',
       color: tone || 'var(--bordeaux-400)'
     }
@@ -2775,7 +2794,7 @@ function MCover({
     style: {
       padding: '24px 20px 32px'
     }
-  }, /*#__PURE__*/React.createElement(MKicker, null, "Mehr Sex \xFCber Dating-Apps"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement(MKicker, null, "\xDCber 200 Frauen \xB7 Anonym"), /*#__PURE__*/React.createElement("div", {
     style: {
       border: '2px solid var(--paper-100)',
       padding: '22px 16px 14px',
@@ -2785,42 +2804,42 @@ function MCover({
     style: {
       fontFamily: 'var(--font-display)',
       fontWeight: 900,
-      fontSize: '46px',
-      lineHeight: 0.84,
-      letterSpacing: '-0.04em',
+      fontSize: '36px',
+      lineHeight: 0.88,
+      letterSpacing: '-0.035em',
       color: 'var(--paper-100)'
     }
-  }, "FUCKBOY"), /*#__PURE__*/React.createElement("div", {
+  }, "FICK-TRAINER"), /*#__PURE__*/React.createElement("div", {
     style: {
       borderTop: '1px solid var(--rule-strong)',
       marginTop: '14px',
       paddingTop: '9px',
       fontFamily: 'var(--font-condensed)',
-      fontSize: '10px',
+      fontSize: '11px',
       fontWeight: 600,
-      letterSpacing: '0.3em',
+      letterSpacing: '0.22em',
       textTransform: 'uppercase',
       color: 'var(--paper-300)'
     }
-  }, "Der Ablauf ist immer gleich. Ich zeige ihn dir.")), /*#__PURE__*/React.createElement("p", {
+  }, "fick-trainer.de")), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '17px',
+      fontSize: '19px',
       lineHeight: 1.5,
       color: 'var(--text-primary)',
       marginTop: '22px'
     }
-  }, "Fast alles davon lief \xFCber Dating-Apps. Nicht wegen meinem Gesicht \u2014 wegen Profil, Timing, Sprache, dem Umgang mit Erwartungen und einem System, das wie ein Laufband in einer Fabrik funktioniert. Wirkt warm, ist aber abgebr\xFCht. Deshalb die Frage nach der Pille. Willst du das wirklich?"), /*#__PURE__*/React.createElement("p", {
+  }, "Ich bin nicht besonders gut aussehend. Ich habe trotzdem mit \xFCber 200 Frauen geschlafen, fast alle \xFCber Dating-Apps. Nicht wegen meinem Gesicht \u2014 wegen Psychologie: Erwartungssteuerung, Gespr\xE4chsf\xFChrung, Timing. Dieselben Mechanismen, die ich beruflich im Verkauf benutze."), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '15px',
-      lineHeight: 1.55,
+      fontSize: '19px',
+      lineHeight: 1.555,
       color: 'var(--text-muted)',
       marginTop: '14px',
       borderLeft: '2px solid var(--bordeaux-700)',
       paddingLeft: '14px'
     }
-  }, "Und ja \u2014 merkst du, was ich gerade gemacht habe? Ich habe dir Druck gemacht, damit du weitermachst. Das ist genau die Technik aus Kapitel 08. Sie funktioniert auch bei dir."), /*#__PURE__*/React.createElement("div", {
+  }, "Ich schreibe anonym. Nicht aus Bescheidenheit \u2014 ich bin noch nicht fertig und benutze das hier weiter, w\xE4hrend du es liest. Und ja: Anonymit\xE4t erzeugt Autorit\xE4t, \u201Enoch nicht fertig\" erzeugt Dringlichkeit. Beides Techniken aus Kapitel 05. Sie funktionieren auch bei dir."), /*#__PURE__*/React.createElement("div", {
     style: {
       marginTop: '22px'
     }
@@ -2830,7 +2849,7 @@ function MCover({
   }, "Sobald sie z\xF6gert, ausweicht oder nicht weiter will, endet jeder Versuch. Sofort. Ein Nein ist keine Verhandlungsposition.")), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '26px',
+      fontSize: '30px',
       fontWeight: 700,
       lineHeight: 1.05,
       letterSpacing: '-0.015em',
@@ -2894,7 +2913,7 @@ function MOverview({
   }, /*#__PURE__*/React.createElement(MKicker, null, "Kurs\xFCbersicht"), /*#__PURE__*/React.createElement("h1", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '34px',
+      fontSize: '40px',
       fontWeight: 700,
       lineHeight: 0.98,
       letterSpacing: '-0.02em',
@@ -2904,8 +2923,8 @@ function MOverview({
   }, "Mehr Dates. Mehr Sex. Und die Rechnung dazu."), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '15px',
-      lineHeight: 1.55,
+      fontSize: '19px',
+      lineHeight: 1.555,
       color: 'var(--text-secondary)',
       marginTop: '12px'
     }
@@ -2924,7 +2943,7 @@ function MOverview({
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-data)',
-      fontSize: '28px',
+      fontSize: '32px',
       fontWeight: 700,
       lineHeight: 0.9,
       color: 'var(--paper-100)'
@@ -2932,9 +2951,9 @@ function MOverview({
   }, v), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '10px',
+      fontSize: '12px',
       fontWeight: 600,
-      letterSpacing: '0.14em',
+      letterSpacing: '0.13em',
       textTransform: 'uppercase',
       color: 'var(--text-faint)',
       marginTop: '7px'
@@ -2959,7 +2978,118 @@ function MOverview({
   }, "Schutz & Recht")), /*#__PURE__*/React.createElement("div", {
     style: {
       ...PAD,
-      marginTop: '28px'
+      marginTop: '30px'
+    }
+  }, /*#__PURE__*/React.createElement(Rule, {
+    tone: "accent",
+    label: "Was diesen Ratgeber unterscheidet"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gap: '12px',
+      marginTop: '16px'
+    }
+  }, (window.FBData.gamechangers || []).map(g => /*#__PURE__*/React.createElement(Card, {
+    key: g.t,
+    surface: "raised",
+    padding: "sm"
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      color: 'var(--volt-500)'
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: g.icon,
+    size: 22
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontSize: '24px',
+      fontWeight: 700,
+      lineHeight: 1.1,
+      letterSpacing: '-0.015em',
+      color: 'var(--paper-100)',
+      marginTop: '12px'
+    }
+  }, g.t), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: '16px',
+      lineHeight: 1.6,
+      color: 'var(--text-secondary)',
+      marginTop: '8px'
+    }
+  }, g.s))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      ...PAD,
+      marginTop: '30px'
+    }
+  }, /*#__PURE__*/React.createElement(Rule, {
+    tone: "danger",
+    label: "Der Ablauf \xB7 acht Schritte"
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: '16px',
+      lineHeight: 1.6,
+      color: 'var(--text-secondary)',
+      marginTop: '14px'
+    }
+  }, "Kein Tippkatalog, sondern eine Kette. Jeder Schritt hat eine Aufgabe \u2014 und eine eigene Abbruchstelle."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gap: '2px',
+      marginTop: '16px',
+      borderTop: '1px solid var(--rule-subtle)'
+    }
+  }, (window.FBData.flow || []).map(f => /*#__PURE__*/React.createElement("div", {
+    key: f.n,
+    style: {
+      padding: '14px 0',
+      borderBottom: '1px solid var(--rule-faint)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'baseline',
+      gap: '12px',
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-data)',
+      fontSize: '18px',
+      fontWeight: 700,
+      color: 'var(--bordeaux-400)'
+    }
+  }, f.n), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: '18px',
+      fontWeight: 700,
+      color: 'var(--paper-100)'
+    }
+  }, f.t), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-condensed)',
+      fontSize: '12px',
+      fontWeight: 600,
+      letterSpacing: '0.12em',
+      textTransform: 'uppercase',
+      color: 'var(--text-faint)'
+    }
+  }, f.k)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: '16px',
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)',
+      marginTop: '7px'
+    }
+  }, f.s))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      ...PAD,
+      marginTop: '30px'
     }
   }, /*#__PURE__*/React.createElement(Rule, {
     tone: "subtle",
@@ -3013,7 +3143,7 @@ function MChapters({
   }, /*#__PURE__*/React.createElement(MKicker, null, "Kapitel\xFCbersicht"), /*#__PURE__*/React.createElement("h1", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '34px',
+      fontSize: '40px',
       fontWeight: 700,
       lineHeight: 0.98,
       letterSpacing: '-0.02em',
@@ -3034,8 +3164,32 @@ function MChapters({
       display: 'grid',
       gap: '10px'
     }
-  }, chapters.map(c => /*#__PURE__*/React.createElement(ChapterCard, {
-    key: c.number,
+  }, chapters.map(c => /*#__PURE__*/React.createElement("div", {
+    key: c.number
+  }, c.image ? /*#__PURE__*/React.createElement("button", {
+    onClick: () => go('ch:' + c.number),
+    "aria-label": 'Kapitel ' + c.number,
+    style: {
+      display: 'block',
+      width: '100%',
+      padding: 0,
+      cursor: 'pointer',
+      overflow: 'hidden',
+      aspectRatio: '16 / 7',
+      background: 'var(--ink-800)',
+      border: '1px solid var(--rule-faint)',
+      borderBottom: 0
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: '../../' + c.image,
+    alt: "",
+    style: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      display: 'block'
+    }
+  })) : null, /*#__PURE__*/React.createElement(ChapterCard, {
     number: c.number,
     title: c.title,
     duration: c.duration,
@@ -3045,7 +3199,7 @@ function MChapters({
       padding: '16px',
       gap: '14px'
     }
-  }))), /*#__PURE__*/React.createElement("div", {
+  })))), /*#__PURE__*/React.createElement("div", {
     style: {
       ...PAD,
       marginTop: '22px'
@@ -3070,7 +3224,7 @@ function MSection({
   }, /*#__PURE__*/React.createElement("h2", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '24px',
+      fontSize: '28px',
       fontWeight: 600,
       lineHeight: 1.1,
       letterSpacing: '-0.01em',
@@ -3080,7 +3234,7 @@ function MSection({
     key: i,
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '16px',
+      fontSize: '18px',
       lineHeight: 1.6,
       color: 'var(--text-secondary)',
       marginTop: '12px'
@@ -3096,7 +3250,7 @@ function MSection({
   }, s.label), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '22px',
+      fontSize: '25px',
       fontWeight: 700,
       lineHeight: 1.12,
       color: 'var(--paper-100)',
@@ -3105,7 +3259,7 @@ function MSection({
   }, s.h), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '14px',
+      fontSize: '18px',
       lineHeight: 1.6,
       color: 'var(--text-secondary)',
       marginTop: '10px'
@@ -3151,16 +3305,16 @@ function MSection({
       }), /*#__PURE__*/React.createElement("span", {
         style: {
           fontFamily: 'var(--font-condensed)',
-          fontSize: '10px',
+          fontSize: '12px',
           fontWeight: 600,
-          letterSpacing: '0.14em',
+          letterSpacing: '0.13em',
           textTransform: 'uppercase'
         }
       }, v.label || v.title)), v.text ? /*#__PURE__*/React.createElement("div", {
         style: {
           fontFamily: 'var(--font-sans)',
-          fontSize: '15px',
-          lineHeight: 1.55,
+          fontSize: '19px',
+          lineHeight: 1.555,
           color: 'var(--text-primary)',
           marginTop: '9px'
         }
@@ -3176,8 +3330,8 @@ function MSection({
         key: t,
         style: {
           fontFamily: 'var(--font-sans)',
-          fontSize: '14px',
-          lineHeight: 1.5,
+          fontSize: '16px',
+          lineHeight: 1.55,
           color: 'var(--text-secondary)'
         }
       }, t))) : null);
@@ -3220,8 +3374,8 @@ function MSection({
   })), /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '15px',
-      lineHeight: 1.55,
+      fontSize: '19px',
+      lineHeight: 1.555,
       color: 'var(--text-secondary)'
     }
   }, t)))));
@@ -3247,7 +3401,7 @@ function MSection({
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '11px',
+      fontSize: '13px',
       fontWeight: 600,
       letterSpacing: '0.12em',
       textTransform: 'uppercase',
@@ -3256,8 +3410,8 @@ function MSection({
   }, it.k), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '14px',
-      lineHeight: 1.55,
+      fontSize: '16px',
+      lineHeight: 1.555,
       color: 'var(--text-secondary)',
       marginTop: '5px'
     }
@@ -3273,8 +3427,8 @@ function MSection({
   }), s.note ? /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '14px',
-      lineHeight: 1.55,
+      fontSize: '16px',
+      lineHeight: 1.555,
       color: 'var(--text-muted)',
       marginBottom: '14px'
     }
@@ -3290,8 +3444,8 @@ function MSection({
       background: 'var(--bg-surface)',
       borderLeft: '2px solid ' + (s.tone === 'good' ? 'var(--volt-600)' : 'var(--wire-600)'),
       fontFamily: 'var(--font-sans)',
-      fontSize: '15px',
-      lineHeight: 1.5,
+      fontSize: '19px',
+      lineHeight: 1.55,
       color: 'var(--text-primary)'
     }
   }, t))));
@@ -3351,16 +3505,32 @@ function MChapter({
   }, "Kapitel ", ch.number), /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '10px',
+      fontSize: '12px',
       fontWeight: 600,
-      letterSpacing: '0.14em',
+      letterSpacing: '0.13em',
       textTransform: 'uppercase',
       color: 'var(--text-muted)'
     }
-  }, ch.duration, ch.quiz ? ' · ' + ch.quiz.length + ' Fragen' : '')), /*#__PURE__*/React.createElement("h1", {
+  }, ch.duration, ch.quiz ? ' · ' + ch.quiz.length + ' Fragen' : '')), ch.image ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: '16px',
+      aspectRatio: '4 / 3',
+      overflow: 'hidden',
+      border: '1px solid var(--rule-subtle)',
+      background: 'var(--ink-800)'
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: '../../' + ch.image,
+    alt: "",
+    style: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover'
+    }
+  })) : null, /*#__PURE__*/React.createElement("h1", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '38px',
+      fontSize: '44px',
       fontWeight: 700,
       lineHeight: 0.96,
       letterSpacing: '-0.025em',
@@ -3370,9 +3540,9 @@ function MChapter({
   }, ch.title), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '11px',
+      fontSize: '13px',
       fontWeight: 600,
-      letterSpacing: '0.16em',
+      letterSpacing: '0.14em',
       textTransform: 'uppercase',
       color: 'var(--bordeaux-400)',
       marginTop: '10px'
@@ -3380,7 +3550,7 @@ function MChapter({
   }, ch.subtitle), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '17px',
+      fontSize: '19px',
       lineHeight: 1.5,
       color: 'var(--text-primary)',
       marginTop: '16px'
@@ -3424,8 +3594,8 @@ function MChapter({
   })), /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '14px',
-      lineHeight: 1.5,
+      fontSize: '16px',
+      lineHeight: 1.55,
       color: 'var(--text-secondary)'
     }
   }, g))))), ch.story ? /*#__PURE__*/React.createElement("div", {
@@ -3437,7 +3607,7 @@ function MChapter({
   }, /*#__PURE__*/React.createElement(MKicker, null, "Pers\xF6nliche Notiz"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-mono)',
-      fontSize: '14px',
+      fontSize: '16px',
       lineHeight: 1.7,
       color: 'var(--text-secondary)',
       marginTop: '9px'
@@ -3458,7 +3628,7 @@ function MChapter({
   }), /*#__PURE__*/React.createElement("h2", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '26px',
+      fontSize: '30px',
       fontWeight: 700,
       lineHeight: 1.06,
       letterSpacing: '-0.015em',
@@ -3474,7 +3644,7 @@ function MChapter({
     key: i,
     style: {
       fontFamily: 'var(--font-mono)',
-      fontSize: '14px',
+      fontSize: '16px',
       lineHeight: 1.7,
       color: i === sc.brief.length - 1 ? 'var(--text-primary)' : 'var(--text-secondary)',
       marginTop: i ? '9px' : 0
@@ -3512,8 +3682,8 @@ function MChapter({
   })), /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '13px',
-      lineHeight: 1.45,
+      fontSize: '19px',
+      lineHeight: 1.55,
       color: 'var(--text-secondary)'
     }
   }, s.text)))), /*#__PURE__*/React.createElement(Rule, {
@@ -3586,8 +3756,8 @@ function MChapter({
   }), ch.interaction.prompt ? /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '14px',
-      lineHeight: 1.55,
+      fontSize: '16px',
+      lineHeight: 1.555,
       color: 'var(--text-muted)',
       marginBottom: '14px'
     }
@@ -3650,7 +3820,7 @@ function MChapter({
   }, ch.challenge.title), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-mono)',
-      fontSize: '13px',
+      fontSize: '17px',
       lineHeight: 1.65,
       color: 'var(--ink-700)',
       marginTop: '9px'
@@ -3763,8 +3933,8 @@ function MChapter({
   })), /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '14px',
-      lineHeight: 1.5,
+      fontSize: '16px',
+      lineHeight: 1.55,
       color: 'var(--text-secondary)'
     }
   }, t)))))) : null, /*#__PURE__*/React.createElement("div", {
@@ -3809,7 +3979,7 @@ function MProfile({
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(MKicker, null, "Pers\xF6nliche Auswertung"), /*#__PURE__*/React.createElement("h1", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '32px',
+      fontSize: '36px',
       fontWeight: 700,
       lineHeight: 1,
       letterSpacing: '-0.02em',
@@ -3824,7 +3994,7 @@ function MProfile({
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-data)',
-      fontSize: '34px',
+      fontSize: '38px',
       fontWeight: 700,
       lineHeight: 0.9,
       color: 'var(--paper-100)'
@@ -3832,7 +4002,7 @@ function MProfile({
   }, done, /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--text-faint)',
-      fontSize: '18px'
+      fontSize: '20px'
     }
   }, "/12")))), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -3892,7 +4062,7 @@ function MSafety() {
   }, "Immer erreichbar"), /*#__PURE__*/React.createElement("h1", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '34px',
+      fontSize: '40px',
       fontWeight: 700,
       lineHeight: 0.98,
       letterSpacing: '-0.02em',
@@ -3930,7 +4100,7 @@ function MSafety() {
   })), /*#__PURE__*/React.createElement("h2", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '24px',
+      fontSize: '28px',
       fontWeight: 600,
       color: 'var(--paper-100)'
     }
@@ -3950,7 +4120,7 @@ function MSafety() {
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-condensed)',
-      fontSize: '11px',
+      fontSize: '13px',
       fontWeight: 600,
       letterSpacing: '0.12em',
       textTransform: 'uppercase',
@@ -3959,7 +4129,7 @@ function MSafety() {
   }, it.k), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-sans)',
-      fontSize: '15px',
+      fontSize: '17px',
       lineHeight: 1.6,
       color: 'var(--text-secondary)',
       marginTop: '6px'
@@ -3984,7 +4154,7 @@ function MSettings({
   }, "Einstellungen"), /*#__PURE__*/React.createElement("h1", {
     style: {
       fontFamily: 'var(--font-display)',
-      fontSize: '30px',
+      fontSize: '34px',
       fontWeight: 700,
       lineHeight: 1.02,
       color: 'var(--paper-100)',
@@ -3999,8 +4169,8 @@ function MSettings({
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-mono)',
-      fontSize: '13px',
-      lineHeight: 1.8,
+      fontSize: '17px',
+      lineHeight: 1.75,
       color: 'var(--text-secondary)'
     }
   }, "Lokal gespeichert \xB7 Modell v", window.FBStore.VERSION, /*#__PURE__*/React.createElement("br", null), "Zuletzt: ", store.updatedAt ? new Date(store.updatedAt).toLocaleString('de-CH') : '—')), /*#__PURE__*/React.createElement("div", {
@@ -5064,16 +5234,48 @@ function ChapterIndex({
       gap: 'var(--space-md)',
       marginTop: 'var(--space-lg)'
     }
-  }, chapters.slice(a.from, a.to).map(c => /*#__PURE__*/React.createElement(ChapterCard, {
+  }, chapters.slice(a.from, a.to).map(c => /*#__PURE__*/React.createElement("div", {
     key: c.number,
+    style: {
+      display: 'flex',
+      alignItems: 'stretch',
+      gap: 0
+    }
+  }, c.image ? /*#__PURE__*/React.createElement("button", {
+    onClick: () => go('ch:' + c.number),
+    "aria-label": 'Kapitel ' + c.number,
+    style: {
+      flex: 'none',
+      width: 150,
+      padding: 0,
+      cursor: 'pointer',
+      overflow: 'hidden',
+      background: 'var(--ink-800)',
+      border: '1px solid var(--rule-faint)',
+      borderRight: 0
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: '../../' + c.image,
+    alt: "",
+    style: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      display: 'block'
+    }
+  })) : null, /*#__PURE__*/React.createElement(ChapterCard, {
     number: c.number,
     title: c.title,
     summary: c.subtitle,
     duration: c.duration,
     decisions: c.quiz ? c.quiz.length : undefined,
     state: STATE_MAP[window.chapterState(c, store)],
-    onClick: () => go('ch:' + c.number)
-  }))))), /*#__PURE__*/React.createElement("section", {
+    onClick: () => go('ch:' + c.number),
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  })))))), /*#__PURE__*/React.createElement("section", {
     style: {
       marginTop: 'var(--space-4xl)'
     }
@@ -5769,7 +5971,24 @@ function ChapterScreen({
       textTransform: 'uppercase',
       color: 'var(--text-muted)'
     }
-  }, ch.duration, ch.quiz ? ' · ' + ch.quiz.length + ' Fragen' : '', ch.scenario ? ' · 1 Ernstfall' : '')), /*#__PURE__*/React.createElement("h1", {
+  }, ch.duration, ch.quiz ? ' · ' + ch.quiz.length + ' Fragen' : '', ch.scenario ? ' · 1 Ernstfall' : '')), ch.image ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 'var(--space-xl)',
+      aspectRatio: '4 / 3',
+      maxHeight: 300,
+      overflow: 'hidden',
+      border: '1px solid var(--rule-subtle)',
+      background: 'var(--ink-800)'
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: '../../' + ch.image,
+    alt: "",
+    style: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover'
+    }
+  })) : null, /*#__PURE__*/React.createElement("h1", {
     style: {
       fontFamily: 'var(--font-display)',
       fontSize: '64px',
@@ -6123,7 +6342,7 @@ function CoverScreen({
     style: {
       color: 'var(--bordeaux-400)'
     }
-  }, "Mehr Sex \xFCber Dating-Apps \u2014 ehrlich erkl\xE4rt"), /*#__PURE__*/React.createElement("span", {
+  }, "\xDCber 200 Frauen \xB7 Psychologie statt Zufall \xB7 Anonym"), /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--text-faint)'
     }
@@ -6137,12 +6356,12 @@ function CoverScreen({
     style: {
       fontFamily: 'var(--font-display)',
       fontWeight: 900,
-      fontSize: '124px',
-      lineHeight: 0.82,
-      letterSpacing: '-0.04em',
+      fontSize: '86px',
+      lineHeight: 0.86,
+      letterSpacing: '-0.035em',
       color: 'var(--paper-100)'
     }
-  }, "FUCKBOY"), /*#__PURE__*/React.createElement("div", {
+  }, "FICK-TRAINER"), /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -6157,11 +6376,11 @@ function CoverScreen({
       fontFamily: 'var(--font-condensed)',
       fontSize: '15px',
       fontWeight: 600,
-      letterSpacing: '0.42em',
+      letterSpacing: '0.32em',
       textTransform: 'uppercase',
       color: 'var(--paper-300)'
     }
-  }, "Der Ablauf ist immer gleich"), /*#__PURE__*/React.createElement("span", {
+  }, "fick-trainer.de \xB7 Der Ablauf ist immer gleich"), /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: 'var(--font-mono)',
       fontSize: '9px',
@@ -6186,7 +6405,7 @@ function CoverScreen({
       color: 'var(--text-primary)',
       maxWidth: '46ch'
     }
-  }, "Ich bin nicht besonders gut aussehend. Ich hatte trotzdem mit ungef\xE4hr 200 Frauen Sex, fast alle \xFCber Dating-Apps. Nicht wegen meinem Gesicht \u2014 wegen Profil, Timing, Sprache, dem Umgang mit Erwartungen und einem System, das wie ein Laufband in einer Fabrik funktioniert. Wirkt warm, ist aber abgebr\xFCht."), /*#__PURE__*/React.createElement("p", {
+  }, "Ich bin nicht besonders gut aussehend. Ich habe trotzdem mit \xFCber 200 Frauen geschlafen, fast alle \xFCber Dating-Apps. Nicht wegen meinem Gesicht \u2014 wegen Psychologie. Erwartungssteuerung, Gespr\xE4chsf\xFChrung, Timing, Verknappung. Dieselben Mechanismen, die ich beruflich im Verkauf einsetze, funktionieren beim Dating genauso. Das ist der unangenehme Teil."), /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: 'var(--font-sans)',
       fontSize: 'var(--text-body-size)',
@@ -6195,7 +6414,7 @@ function CoverScreen({
       maxWidth: '52ch',
       marginTop: 'var(--space-lg)'
     }
-  }, "Deshalb die Frage nach der Pille. Willst du das wirklich? Wenn nein, ist der Lehrgang nichts f\xFCr dich. Du wirst dann wahrscheinlich feststellen, dass deine Konkurrenz deine Regeln bricht. Das tut mir leid. Sie haben die rote Pille genommen."), /*#__PURE__*/React.createElement("div", {
+  }, "Ich schreibe unter keinem Namen. Nicht aus Bescheidenheit \u2014 ich bin schlicht noch nicht fertig. Ich benutze das hier weiter, w\xE4hrend du es liest. Jemand, der aufgeh\xF6rt h\xE4tte, w\xFCrde das anders erz\xE4hlen, und ehrlicher w\xE4re es nicht."), /*#__PURE__*/React.createElement("div", {
     style: {
       borderLeft: '2px solid var(--bordeaux-700)',
       paddingLeft: 'var(--space-lg)',
@@ -6208,7 +6427,7 @@ function CoverScreen({
       lineHeight: 1.6,
       color: 'var(--text-muted)'
     }
-  }, "Und ja \u2014 merkst du, was ich gerade gemacht habe? Ich habe dir Druck gemacht, damit du weitermachst. Das ist genau die Technik aus Kapitel 03. Sie funktioniert auch bei dir.")), /*#__PURE__*/React.createElement("div", {
+  }, "Und ja \u2014 merkst du, was der Absatz oben gemacht hat? Anonymit\xE4t erzeugt Autorit\xE4t, und \u201Enoch nicht fertig\" erzeugt Dringlichkeit. Beides sind Techniken aus Kapitel 05. Sie funktionieren auch bei dir.")), /*#__PURE__*/React.createElement("div", {
     style: {
       borderLeft: '2px solid var(--rule-subtle)',
       paddingLeft: 'var(--space-lg)',
@@ -6283,8 +6502,9 @@ const {
 function HeavenScreen({
   go,
   compact = false,
-  image = '../../assets/heaven.png'
+  image
 }) {
+  const src = image || window.__resources && window.__resources.heavenImg || '../../assets/heaven.png';
   return /*#__PURE__*/React.createElement("div", {
     style: {
       position: 'relative',
@@ -6331,7 +6551,7 @@ function HeavenScreen({
       WebkitMaskImage: 'linear-gradient(to bottom, #000 62%, rgba(0,0,0,.25) 88%, transparent 100%)'
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: image,
+    src: src,
     alt: "",
     style: {
       width: '100%',
@@ -7115,6 +7335,114 @@ function OverviewScreen({
       marginTop: 'var(--space-5xl)'
     }
   }, /*#__PURE__*/React.createElement(Rule, {
+    tone: "accent",
+    label: "Was diesen Ratgeber unterscheidet"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))',
+      gap: 'var(--space-lg)',
+      marginTop: 'var(--space-xl)'
+    }
+  }, (window.FBData.gamechangers || []).map(g => /*#__PURE__*/React.createElement(Card, {
+    key: g.t,
+    surface: "raised",
+    padding: "md"
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      color: 'var(--volt-500)'
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: g.icon,
+    size: 24
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontSize: '26px',
+      fontWeight: 700,
+      lineHeight: 1.1,
+      letterSpacing: '-0.015em',
+      color: 'var(--paper-100)',
+      marginTop: 'var(--space-lg)'
+    }
+  }, g.t), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: '15px',
+      lineHeight: 1.6,
+      color: 'var(--text-secondary)',
+      marginTop: 'var(--space-sm)'
+    }
+  }, g.s))))), /*#__PURE__*/React.createElement("section", {
+    style: {
+      marginTop: 'var(--space-5xl)'
+    }
+  }, /*#__PURE__*/React.createElement(Rule, {
+    tone: "danger",
+    label: "Der Ablauf \xB7 acht Schritte"
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: 'var(--text-body-size)',
+      lineHeight: 1.62,
+      color: 'var(--text-secondary)',
+      marginTop: 'var(--space-lg)',
+      maxWidth: '62ch'
+    }
+  }, "Das ist der Kern. Kein Tippkatalog, sondern eine Kette: Jeder Schritt hat eine Aufgabe, f\xFChrt zum n\xE4chsten \u2014 und hat eine eigene Abbruchstelle. Wo sie nicht mitgeht, endet der Schritt. Nicht der Respekt."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gap: '2px',
+      marginTop: 'var(--space-xl)',
+      borderTop: '1px solid var(--rule-subtle)'
+    }
+  }, (window.FBData.flow || []).map(f => /*#__PURE__*/React.createElement("div", {
+    key: f.n,
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '52px 200px minmax(0,1fr) 110px',
+      gap: 'var(--space-lg)',
+      alignItems: 'baseline',
+      padding: 'var(--space-lg) 0',
+      borderBottom: '1px solid var(--rule-faint)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-data)',
+      fontSize: '20px',
+      fontWeight: 700,
+      color: 'var(--bordeaux-400)'
+    }
+  }, f.n), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: '17px',
+      fontWeight: 700,
+      color: 'var(--paper-100)'
+    }
+  }, f.t), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: '15px',
+      lineHeight: 1.55,
+      color: 'var(--text-secondary)'
+    }
+  }, f.s), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-condensed)',
+      fontSize: '11px',
+      fontWeight: 600,
+      letterSpacing: '0.12em',
+      textTransform: 'uppercase',
+      color: 'var(--text-faint)',
+      textAlign: 'right'
+    }
+  }, f.k))))), /*#__PURE__*/React.createElement("section", {
+    style: {
+      marginTop: 'var(--space-5xl)'
+    }
+  }, /*#__PURE__*/React.createElement(Rule, {
     tone: "subtle",
     label: "Aufbau \xB7 drei Akte"
   }), /*#__PURE__*/React.createElement("div", {
@@ -7290,7 +7618,7 @@ const PLACES = [{
   tone: 'consent'
 }];
 function Wordmark({
-  size = 26
+  size = 21
 }) {
   return /*#__PURE__*/React.createElement("div", {
     style: {
@@ -7304,17 +7632,17 @@ function Wordmark({
       letterSpacing: '-0.035em',
       color: 'var(--paper-100)'
     }
-  }, "FUCKBOY"), /*#__PURE__*/React.createElement("div", {
+  }, "FICK-TRAINER"), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-condensed)',
       fontSize: '9px',
       fontWeight: 600,
-      letterSpacing: '0.3em',
+      letterSpacing: '0.24em',
       textTransform: 'uppercase',
       color: 'var(--text-faint)',
       marginTop: '5px'
     }
-  }, "Das verbotene Werkzeug"));
+  }, "fick-trainer.de"));
 }
 function StateDot({
   state
@@ -8589,6 +8917,7 @@ window.FBChaptersA = [/* ═══════════ 01 ══════
   number: '01',
   slug: 'mindset',
   rail: 'Mindset',
+  image: 'assets/chapters/01-mindset.png',
   title: 'Das Mindset',
   subtitle: 'Selbstsicherheit ohne Selbstüberschätzung',
   duration: '14 Min',
@@ -8790,6 +9119,7 @@ window.FBChaptersA = [/* ═══════════ 01 ══════
   number: '02',
   slug: 'consent',
   rail: 'Consent',
+  image: 'assets/chapters/02-consent.png',
   title: 'Consent ist die Regel',
   subtitle: 'Nicht das Kleingedruckte, sondern die Bedingung',
   duration: '22 Min',
@@ -9030,6 +9360,7 @@ window.FBChaptersB = [/* ═══════════ 03 ══════
   number: '03',
   slug: 'auftreten',
   rail: 'Auftreten',
+  image: 'assets/chapters/03-auftreten.png',
   title: 'Auftreten',
   subtitle: 'Was du mit dem Äusseren doch tust',
   duration: '16 Min',
@@ -9183,6 +9514,7 @@ window.FBChaptersB = [/* ═══════════ 03 ══════
   number: '04',
   slug: 'profil',
   rail: 'Profil & Fotos',
+  image: 'assets/chapters/04-profil.png',
   title: 'Profil & Fotos',
   subtitle: 'Was die App zeigt und was Menschen sehen',
   duration: '18 Min',
@@ -9341,6 +9673,7 @@ window.FBChaptersC = [/* ═══════════ 05 ══════
   number: '05',
   slug: 'schreiben',
   rail: 'Schreiben',
+  image: 'assets/chapters/05-schreiben.png',
   title: 'Schreiben',
   subtitle: 'Textbausteine und „Wer fragt, der führt“',
   duration: '20 Min',
@@ -9352,6 +9685,15 @@ window.FBChaptersC = [/* ═══════════ 05 ══════
     type: 'text',
     h: 'Lies das Profil, bevor du schreibst',
     p: ['Eine konkrete Beobachtung schlägt jedes Kompliment. „Schöne Augen“ hat sie heute schon dreimal bekommen. „Das Foto mit dem Steinbock — wo war das?“ hat sie noch nie bekommen, weil dafür jemand hinschauen müsste.', 'Und der Nebeneffekt: Du erkennst früh, ob überhaupt etwas da ist, worüber du reden willst.']
+  }, {
+    type: 'text',
+    h: 'Jede Nachricht hat eine Aufgabe',
+    p: ['Das ist der Punkt, an dem sich dieser Kurs von jedem anderen unterscheidet: Schreiben ist hier kein Selbstzweck, sondern ein Schritt in einer Kette. Nachricht eins soll eine Antwort erzeugen. Nachricht drei soll zeigen, wer du bist. Nachricht sechs soll das Treffen möglich machen. Wenn eine Nachricht keine dieser Aufgaben hat, kannst du sie weglassen.', 'Der häufigste Fehler ist nicht die falsche Formulierung, sondern das ziellose Weiterschreiben. Zwei Wochen netter Chat ohne Richtung enden zuverlässig in nichts — nicht weil du langweilig warst, sondern weil nie ein nächster Schritt angeboten wurde.']
+  }, {
+    type: 'list',
+    h: 'Der Ablauf im Chat',
+    tone: 'accent',
+    items: ['Nachricht 1 — konkrete Beobachtung aus ihrem Profil plus eine Frage. Aufgabe: eine Antwort auslösen.', 'Nachricht 2–4 — antworten, eigene Perspektive geben, zurückfragen. Aufgabe: zeigen, wer du bist, und prüfen, ob es beidseitig läuft.', 'Nachricht 5 — Absicht klarstellen, wenn sie fragt. Aufgabe: keine falsche Erwartung entstehen lassen.', 'Nachricht 6 — die Einladung. Tag, Zeit, Ort. Aufgabe: aus dem Chat ein Treffen machen.', 'Danach — Bestätigung am Tag des Treffens. Aufgabe: Verlässlichkeit zeigen.']
   }, {
     type: 'principle',
     label: 'Psychologisches Prinzip',
@@ -9546,6 +9888,7 @@ window.FBChaptersC = [/* ═══════════ 05 ══════
   number: '06',
   slug: 'treffen',
   rail: 'Vom Match zum Treffen',
+  image: 'assets/chapters/06-treffen.png',
   title: 'Vom Match zum Treffen',
   subtitle: 'Der Übergang, an dem die meisten scheitern',
   duration: '15 Min',
@@ -9732,6 +10075,7 @@ window.FBChaptersD = [/* ═══════════ 07 ══════
   number: '07',
   slug: 'date',
   rail: 'Das Date',
+  image: 'assets/chapters/07-date.png',
   title: 'Das Date',
   subtitle: 'Ort, Länge, Ausstieg',
   duration: '17 Min',
@@ -9757,6 +10101,24 @@ window.FBChaptersD = [/* ═══════════ 07 ══════
     label: 'Psychologisches Prinzip',
     h: 'Gesprächsbalance',
     p: 'Ein gutes Gespräch ist ungefähr hälftig. Wer permanent erzählt, hört auf zuzuhören; wer nur fragt, führt ein Interview. Die einfachste Korrektur: Wenn du drei Sätze am Stück geredet hast, stell eine Frage. Wenn du drei Fragen gestellt hast, erzähl etwas von dir.'
+  }, {
+    type: 'text',
+    h: 'Ein Drink ist kein Ziel, sondern ein Schritt',
+    p: ['Hier steht die unbequeme Wahrheit über das erste Treffen: Ein Getränk ist keine Veranstaltung, die für sich steht. Es ist der kürzeste Weg, herauszufinden, ob ihr beide den Abend gemeinsam weiterführen wollt. Genau deshalb ein Getränk und kein Menü — nach einer Stunde ist der nächste Schritt möglich, statt dass ihr bis zur Rechnung festsitzt.', 'Das Ziel des Abends darf Sex sein. Was nicht erlaubt ist: den Ablauf gegen sie durchzuziehen. Jeder Schritt braucht ihr Ja, und an jedem Schritt kann der Abend enden, ohne dass etwas schiefgelaufen ist.']
+  }, {
+    type: 'list',
+    h: 'Der Übergang — die Reihenfolge',
+    tone: 'accent',
+    items: ['1 — Direkt einladen. „Ich wohne fünf Minuten von hier. Willst du noch mit?" Klar gefragt, nicht als Vorwand verpackt.', '2 — Sagt sie nein: Spaziergang anbieten. Nicht als zweiter Anlauf zum selben Ziel, sondern als das, was es ist — mehr Zeit, weniger Verbindlichkeit.', '3 — Den Spaziergang an einen schönen Ort in deiner Nähe legen. See, Brücke, Altstadt. Es soll sich lohnen, nicht wie ein Umweg wirken.', '4 — Weiss sie nicht, wo das ist, hol sie mit dem Auto ab. Sag im selben Satz, dass du sie auch wieder zurückfährst, wann immer sie will.', '5 — Nach dem Spaziergang bist du in deiner Nähe. Jetzt ist die Einladung naheliegend statt konstruiert.', '6 — Fragt sie, was ihr bei dir macht: kochen. Das ist die einzige ehrliche Antwort, die nur zu Hause funktioniert.']
+  }, {
+    type: 'text',
+    h: 'Warum kochen die beste Antwort ist',
+    p: ['„Was machen wir denn bei dir?" ist keine rhetorische Frage. Sie will einen Grund, der nicht „Sex" heisst, weil sie sonst zusagen müsste, ohne es aussprechen zu wollen. Kochen ist der einzige Vorschlag, der ausschliesslich bei dir funktioniert, konkret ist und dir zwei Stunden gibt.', 'Wenn du nicht kochen kannst, sag genau das und bestell etwas. „Ich kann ehrlich gesagt nichts ausser Pasta — ich bestell uns was, ist das okay?" Die Entschuldigung ist besser als eine Behauptung, die in deiner Küche auffliegt.']
+  }, {
+    type: 'note',
+    tone: 'consent',
+    title: 'Der Ablauf hat an jedem Schritt eine Abbruchstelle.',
+    text: 'Nein zur Wohnung heisst nein zur Wohnung. Der Spaziergang ist kein zweiter Versuch für dieselbe Frage, sondern ein eigenes Angebot mit eigenem Nein. Wenn sie zweimal ausweicht, ist der Abend zu Ende — freundlich, ohne dritten Vorschlag. Und wenn du sie fährst, gehört der Rückweg dir: Sie muss zu jedem Zeitpunkt ohne Diskussion nach Hause kommen, sonst hast du ihr die Möglichkeit genommen, den Abend zu beenden.'
   }, {
     type: 'compare',
     h: 'Beenden',
@@ -9834,6 +10196,20 @@ window.FBChaptersD = [/* ═══════════ 07 ══════
       }]
     }, {
       letter: 'D',
+      label: 'Du fragst',
+      kind: 'initiative',
+      outcome: 'costly',
+      quote: '„Ich wohne gleich um die Ecke — willst du noch mit hoch?“',
+      feedback: 'Die Frage ist erlaubt und klar gestellt. Nur der Zeitpunkt stimmt nicht: Sie stellt kaum eigene Fragen, der Funke fehlt. Die Einladung kommt hier nicht als Angebot an, sondern als das eigentliche Ziel des Abends — und genau so liest sie sie.',
+      deltas: [{
+        id: 'initiative',
+        delta: '+2'
+      }, {
+        id: 'beobachtung',
+        delta: '−5'
+      }]
+    }, {
+      letter: 'E',
       label: 'Du sagst',
       kind: 'rechtfertig',
       outcome: 'costly',
@@ -9859,7 +10235,7 @@ window.FBChaptersD = [/* ═══════════ 07 ══════
     question: 'Wann hast du zuletzt ein Date länger laufen lassen, als beide wollten? Was hat dich davon abgehalten, es zu beenden?',
     placeholder: '…'
   },
-  summary: ['Ein Getränk, eine Stunde, öffentlich.', 'Eingeladen heisst angeboten zu zahlen — ohne Erwartung.', 'Investition erzeugt keinen Anspruch.', 'Verlängern nur bei sichtbarem beidseitigem Interesse.', 'Ehrlich beenden schlägt freundliche Vertröstung.'],
+  summary: ['Ein Getränk, eine Stunde, öffentlich.', 'Eingeladen heisst angeboten zu zahlen — ohne Erwartung.', 'Investition erzeugt keinen Anspruch.', 'Verlängern nur bei sichtbarem beidseitigem Interesse.', 'Ehrlich beenden schlägt freundliche Vertröstung.', 'Der Ablauf: Drink → Einladung → bei Nein Spaziergang → Einladung → kochen. Jeder Schritt mit eigenem Nein.'],
   quiz: [{
     q: 'Warum ein Getränk statt Abendessen?',
     options: [{
@@ -9900,12 +10276,13 @@ window.FBChaptersD = [/* ═══════════ 07 ══════
       why: 'Bittet um eine Bewertung und schwächt.'
     }]
   }],
-  transfer: 'Nächstes erstes Treffen: ein Getränk, eine Stunde, fester Ort.'
+  transfer: 'Nächstes erstes Treffen: ein Getränk, eine Stunde, fester Ort in deiner Nähe — und der nächste Schritt vorher überlegt.'
 }, /* ═══════════ 08 ═══════════ */
 {
   number: '08',
   slug: 'fehler',
   rail: 'Der grösste Fehler',
+  image: 'assets/chapters/08-fehler.png',
   title: 'Der grösste Fehler',
   subtitle: 'Warum das Bedürfnis nach Sex der schnellste Weg ist, ihn nicht zu haben',
   duration: '14 Min',
@@ -10082,6 +10459,7 @@ window.FBChaptersE = [/* ═══════════ 09 ══════
   number: '09',
   slug: 'ablehnung',
   rail: 'Ablehnung',
+  image: 'assets/chapters/09-ablehnung.png',
   title: 'Ablehnung, Ghosting, Nichterscheinen',
   subtitle: 'Der häufigste Einzelfall überhaupt',
   duration: '15 Min',
@@ -10269,6 +10647,7 @@ window.FBChaptersE = [/* ═══════════ 09 ══════
   number: '10',
   slug: 'naehe',
   rail: 'Nähe',
+  image: 'assets/chapters/10-naehe.png',
   title: 'Nähe',
   subtitle: 'Annäherung, Übergang und Alkohol',
   duration: '24 Min',
@@ -11066,6 +11445,64 @@ try { (() => {
 /* Inhalte für die Spezialbausteine in Kapitel 04, 05 und 11.
    Die Kapiteltexte selbst liegen in content/chapters-*.js */
 window.FBData = {
+  flow: [{
+    n: '01',
+    t: 'Profil',
+    s: 'Das Profil macht die Vorentscheidung. Wer hier verliert, kommt gar nicht erst ins Gespräch.',
+    k: 'Kapitel 04'
+  }, {
+    n: '02',
+    t: 'Erste Nachricht',
+    s: 'Konkrete Beobachtung aus ihrem Profil plus eine Frage, die eine Richtung vorgibt.',
+    k: 'Kapitel 05'
+  }, {
+    n: '03',
+    t: 'Gespräch',
+    s: 'Jede Nachricht hat eine Aufgabe: näher an das Treffen. Kein Chat um des Chats willen.',
+    k: 'Kapitel 05'
+  }, {
+    n: '04',
+    t: 'Einladung',
+    s: 'Tag, Zeit, Ort. Ein Getränk, eine Stunde, in deiner Nähe.',
+    k: 'Kapitel 06'
+  }, {
+    n: '05',
+    t: 'Das Treffen',
+    s: 'Kein Programm, kein Menü. Ein Ort, von dem aus der nächste Schritt kurz ist.',
+    k: 'Kapitel 07'
+  }, {
+    n: '06',
+    t: 'Der Übergang',
+    s: 'Die Einladung zu dir. Wenn sie nein sagt: Spaziergang. Wenn sie ja sagt: kochen.',
+    k: 'Kapitel 07'
+  }, {
+    n: '07',
+    t: 'Nähe',
+    s: 'Nur mit ihrem ausgesprochenen Ja, bei jedem Schritt neu. Zögern beendet den Ablauf.',
+    k: 'Kapitel 10'
+  }, {
+    n: '08',
+    t: 'Der Abgang',
+    s: 'Vorher sagen, ob du bleibst. Danach ist derselbe Satz eine Zurückweisung.',
+    k: 'Kapitel 11'
+  }],
+  gamechangers: [{
+    icon: 'split',
+    t: 'Ein Ablauf statt Tipps',
+    s: 'Andere Ratgeber geben dir dreissig einzelne Tricks. Hier ist es eine Kette: acht Schritte, jeder mit einer Aufgabe, jeder mit einem Ausstieg. Du weisst an jedem Punkt, wo du bist und was als Nächstes kommt.'
+  }, {
+    icon: 'zap',
+    t: 'Textbausteine statt Talent',
+    s: 'Du schreibst deine besten Antworten einmal und legst sie auf drei Buchstaben. Zwanzig Gespräche mit Tiefe in der Zeit, die andere für eines brauchen — in deiner Sprache, nicht in einer geliehenen.'
+  }, {
+    icon: 'scale',
+    t: 'Die Kosten stehen daneben',
+    s: 'Jede Technik kommt mit dem, was sie anrichtet. Kein Kapitel verkauft dir einen Trick, ohne zu sagen, wen er trifft. Das findest du sonst nirgends.'
+  }, {
+    icon: 'shield-check',
+    t: 'Consent als Bedingung, nicht als Bremse',
+    s: 'Der Ablauf hat an jedem Schritt eine Abbruchstelle. Nicht als Warnhinweis am Rand, sondern eingebaut: Wo sie nicht mitgeht, endet der Schritt — und du weisst vorher, wie du dann reagierst.'
+  }],
   photos: [{
     rank: '01',
     title: 'Lachen. Echt, nicht posiert.',
@@ -11154,6 +11591,7 @@ window.FBData = {
       name: 'M.',
       age: 27,
       meta: '4 km entfernt',
+      image: '../../assets/sim/profile-01.png',
       tags: ['Klettern', 'Sarkasmus', 'Kein Small Talk']
     },
     thread: [{

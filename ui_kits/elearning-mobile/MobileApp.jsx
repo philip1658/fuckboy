@@ -18,11 +18,11 @@ function TabBar({ screen, go }) {
         return (
           <button key={t.id} onClick={() => go(t.id)} style={{
             display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px',
-            padding: '11px 4px 7px', minHeight: '52px', background: 'transparent', border: 0, cursor: 'pointer',
+            padding: '13px 4px 9px', minHeight: '60px', background: 'transparent', border: 0, cursor: 'pointer',
             color: on ? 'var(--paper-100)' : t.id === 'safety' ? 'var(--wire-600)' : 'var(--text-faint)'
           }}>
-            <Icon name={t.icon} size={19} />
-            <span style={{ fontFamily: 'var(--font-condensed)', fontSize: '9px', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' }}>{t.label}</span>
+            <Icon name={t.icon} size={22} />
+            <span style={{ fontFamily: 'var(--font-condensed)', fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{t.label}</span>
           </button>
         );
       })}
@@ -35,13 +35,13 @@ function TopBar({ screen, go, chapters }) {
   const ch = inCh ? chapters.find(c => c.number === screen.slice(3)) : null;
   return (
     <header style={{
-      flex: 'none', height: '52px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+      flex: 'none', height: '58px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       padding: '0 8px 0 ' + (inCh ? '4px' : '20px'), borderBottom: '1px solid var(--rule-faint)', background: 'var(--bg-page)'
     }}>
       <span style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
         {inCh ? <IconButton icon="chevron-left" label="Zurück zu den Kapiteln" size="sm" onClick={() => go('chapters')} /> : null}
-        {inCh ? <span style={{ fontFamily: 'var(--font-condensed)', fontSize: '11px', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--bordeaux-400)', flex: 'none' }}>Kap. {ch ? ch.number : ''}</span> : null}
-        <span style={{ fontFamily: 'var(--font-condensed)', fontSize: '12px', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--text-secondary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+        {inCh ? <span style={{ fontFamily: 'var(--font-condensed)', fontSize: '13px', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--bordeaux-400)', flex: 'none' }}>Kap. {ch ? ch.number : ''}</span> : null}
+        <span style={{ fontFamily: 'var(--font-condensed)', fontSize: '14px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-secondary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
           {ch ? ch.rail : TITLES[screen]}
         </span>
       </span>
@@ -50,7 +50,18 @@ function TopBar({ screen, go, chapters }) {
   );
 }
 
+function useBare() {
+  const [bare, setBare] = React.useState(() => window.innerWidth < 560);
+  React.useEffect(() => {
+    const on = () => setBare(window.innerWidth < 560);
+    window.addEventListener('resize', on);
+    return () => window.removeEventListener('resize', on);
+  }, []);
+  return bare;
+}
+
 function MobileApp() {
+  const noFrame = useBare();
   const CH = window.FBChapters;
   const [store, setStore] = React.useState(() => window.FBStore.load());
   const [screen, setScreen] = React.useState('cover');
@@ -99,7 +110,7 @@ function MobileApp() {
   const ch = screen.indexOf('ch:') === 0 ? CH.find(c => c.number === screen.slice(3)) : null;
 
   const body = (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--bg-page)', paddingTop: '54px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--bg-page)', paddingTop: noFrame ? 'env(safe-area-inset-top, 0px)' : '54px' }}>
       {!bare ? <TopBar screen={screen} go={go} chapters={CH} /> : null}
       <div ref={scrollRef} style={{ flex: 1, minHeight: 0, overflowY: 'auto' }}>
         {screen === 'cover' ? <MCover go={go} /> : null}
@@ -115,6 +126,9 @@ function MobileApp() {
     </div>
   );
 
+  if (noFrame) {
+    return <div style={{ position: 'fixed', inset: 0, background: 'var(--bg-page)' }}>{body}</div>;
+  }
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', padding: '24px' }}>
       <IOSDevice dark>{body}</IOSDevice>

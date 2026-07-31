@@ -3,6 +3,7 @@ window.FBChaptersC = [
 /* ═══════════ 05 ═══════════ */
 {
   number: '05', slug: 'schreiben', rail: 'Schreiben',
+  image: 'assets/chapters/05-schreiben.png',
   title: 'Schreiben',
   subtitle: 'Textbausteine und „Wer fragt, der führt“',
   duration: '20 Min',
@@ -19,6 +20,17 @@ window.FBChaptersC = [
     { type: 'text', h: 'Lies das Profil, bevor du schreibst',
       p: ['Eine konkrete Beobachtung schlägt jedes Kompliment. „Schöne Augen“ hat sie heute schon dreimal bekommen. „Das Foto mit dem Steinbock — wo war das?“ hat sie noch nie bekommen, weil dafür jemand hinschauen müsste.',
           'Und der Nebeneffekt: Du erkennst früh, ob überhaupt etwas da ist, worüber du reden willst.'] },
+    { type: 'text', h: 'Jede Nachricht hat eine Aufgabe',
+      p: ['Das ist der Punkt, an dem sich dieser Kurs von jedem anderen unterscheidet: Schreiben ist hier kein Selbstzweck, sondern ein Schritt in einer Kette. Nachricht eins soll eine Antwort erzeugen. Nachricht drei soll zeigen, wer du bist. Nachricht sechs soll das Treffen möglich machen. Wenn eine Nachricht keine dieser Aufgaben hat, kannst du sie weglassen.',
+          'Der häufigste Fehler ist nicht die falsche Formulierung, sondern das ziellose Weiterschreiben. Zwei Wochen netter Chat ohne Richtung enden zuverlässig in nichts — nicht weil du langweilig warst, sondern weil nie ein nächster Schritt angeboten wurde.'] },
+    { type: 'list', h: 'Der Ablauf im Chat', tone: 'accent',
+      items: [
+        'Nachricht 1 — konkrete Beobachtung aus ihrem Profil plus eine Frage. Aufgabe: eine Antwort auslösen.',
+        'Nachricht 2–4 — antworten, eigene Perspektive geben, zurückfragen. Aufgabe: zeigen, wer du bist, und prüfen, ob es beidseitig läuft.',
+        'Nachricht 5 — Absicht klarstellen, wenn sie fragt. Aufgabe: keine falsche Erwartung entstehen lassen.',
+        'Nachricht 6 — die Einladung. Tag, Zeit, Ort. Aufgabe: aus dem Chat ein Treffen machen.',
+        'Danach — Bestätigung am Tag des Treffens. Aufgabe: Verlässlichkeit zeigen.'
+      ] },
     { type: 'principle', label: 'Psychologisches Prinzip', h: 'Die Kunst der Unterhaltung',
       p: 'Interessant sein heisst nicht, permanent Witze oder Geschichten zu liefern. Gute Unterhaltung entsteht aus Aufmerksamkeit, Resonanz, eigenen Perspektiven und konkreten Details. Wer dauernd performt, hört auf zuzuhören — und das merkt man schneller als jede Pointe.' },
     { type: 'text', h: 'Wer fragt, der führt',
@@ -114,6 +126,7 @@ window.FBChaptersC = [
 /* ═══════════ 06 ═══════════ */
 {
   number: '06', slug: 'treffen', rail: 'Vom Match zum Treffen',
+  image: 'assets/chapters/06-treffen.png',
   title: 'Vom Match zum Treffen',
   subtitle: 'Der Übergang, an dem die meisten scheitern',
   duration: '15 Min',

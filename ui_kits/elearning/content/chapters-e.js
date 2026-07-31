@@ -3,6 +3,7 @@ window.FBChaptersE = [
 /* ═══════════ 09 ═══════════ */
 {
   number: '09', slug: 'ablehnung', rail: 'Ablehnung',
+  image: 'assets/chapters/09-ablehnung.png',
   title: 'Ablehnung, Ghosting, Nichterscheinen',
   subtitle: 'Der häufigste Einzelfall überhaupt',
   duration: '15 Min',
@@ -101,6 +102,7 @@ window.FBChaptersE = [
 /* ═══════════ 10 ═══════════ */
 {
   number: '10', slug: 'naehe', rail: 'Nähe',
+  image: 'assets/chapters/10-naehe.png',
   title: 'Nähe',
   subtitle: 'Annäherung, Übergang und Alkohol',
   duration: '24 Min',

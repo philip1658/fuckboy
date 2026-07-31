@@ -3,6 +3,7 @@ window.FBChaptersD = [
 /* ═══════════ 07 ═══════════ */
 {
   number: '07', slug: 'date', rail: 'Das Date',
+  image: 'assets/chapters/07-date.png',
   title: 'Das Date',
   subtitle: 'Ort, Länge, Ausstieg',
   duration: '17 Min',
@@ -29,6 +30,23 @@ window.FBChaptersD = [
       text: 'Zeit, Geld und Aufwand erzeugen keinen Anspruch auf Nähe. Wer so denkt, sagt es früher oder später auch — und in dem Moment ist der Abend vorbei. Zu Recht.' },
     { type: 'principle', label: 'Psychologisches Prinzip', h: 'Gesprächsbalance',
       p: 'Ein gutes Gespräch ist ungefähr hälftig. Wer permanent erzählt, hört auf zuzuhören; wer nur fragt, führt ein Interview. Die einfachste Korrektur: Wenn du drei Sätze am Stück geredet hast, stell eine Frage. Wenn du drei Fragen gestellt hast, erzähl etwas von dir.' },
+    { type: 'text', h: 'Ein Drink ist kein Ziel, sondern ein Schritt',
+      p: ['Hier steht die unbequeme Wahrheit über das erste Treffen: Ein Getränk ist keine Veranstaltung, die für sich steht. Es ist der kürzeste Weg, herauszufinden, ob ihr beide den Abend gemeinsam weiterführen wollt. Genau deshalb ein Getränk und kein Menü — nach einer Stunde ist der nächste Schritt möglich, statt dass ihr bis zur Rechnung festsitzt.',
+          'Das Ziel des Abends darf Sex sein. Was nicht erlaubt ist: den Ablauf gegen sie durchzuziehen. Jeder Schritt braucht ihr Ja, und an jedem Schritt kann der Abend enden, ohne dass etwas schiefgelaufen ist.'] },
+    { type: 'list', h: 'Der Übergang — die Reihenfolge', tone: 'accent',
+      items: [
+        '1 — Direkt einladen. „Ich wohne fünf Minuten von hier. Willst du noch mit?" Klar gefragt, nicht als Vorwand verpackt.',
+        '2 — Sagt sie nein: Spaziergang anbieten. Nicht als zweiter Anlauf zum selben Ziel, sondern als das, was es ist — mehr Zeit, weniger Verbindlichkeit.',
+        '3 — Den Spaziergang an einen schönen Ort in deiner Nähe legen. See, Brücke, Altstadt. Es soll sich lohnen, nicht wie ein Umweg wirken.',
+        '4 — Weiss sie nicht, wo das ist, hol sie mit dem Auto ab. Sag im selben Satz, dass du sie auch wieder zurückfährst, wann immer sie will.',
+        '5 — Nach dem Spaziergang bist du in deiner Nähe. Jetzt ist die Einladung naheliegend statt konstruiert.',
+        '6 — Fragt sie, was ihr bei dir macht: kochen. Das ist die einzige ehrliche Antwort, die nur zu Hause funktioniert.'
+      ] },
+    { type: 'text', h: 'Warum kochen die beste Antwort ist',
+      p: ['„Was machen wir denn bei dir?" ist keine rhetorische Frage. Sie will einen Grund, der nicht „Sex" heisst, weil sie sonst zusagen müsste, ohne es aussprechen zu wollen. Kochen ist der einzige Vorschlag, der ausschliesslich bei dir funktioniert, konkret ist und dir zwei Stunden gibt.',
+          'Wenn du nicht kochen kannst, sag genau das und bestell etwas. „Ich kann ehrlich gesagt nichts ausser Pasta — ich bestell uns was, ist das okay?" Die Entschuldigung ist besser als eine Behauptung, die in deiner Küche auffliegt.'] },
+    { type: 'note', tone: 'consent', title: 'Der Ablauf hat an jedem Schritt eine Abbruchstelle.',
+      text: 'Nein zur Wohnung heisst nein zur Wohnung. Der Spaziergang ist kein zweiter Versuch für dieselbe Frage, sondern ein eigenes Angebot mit eigenem Nein. Wenn sie zweimal ausweicht, ist der Abend zu Ende — freundlich, ohne dritten Vorschlag. Und wenn du sie fährst, gehört der Rückweg dir: Sie muss zu jedem Zeitpunkt ohne Diskussion nach Hause kommen, sonst hast du ihr die Möglichkeit genommen, den Abend zu beenden.' },
     { type: 'compare', h: 'Beenden',
       bad: { label: 'Vertröstung', text: '„War schön, wir machen das bald wieder!“ — gesagt, obwohl du weisst, dass du dich nicht mehr meldest. Sie wartet dann drei Tage umsonst.' },
       good: { label: 'Ehrlich', text: '„Ich fand den Abend angenehm, aber ich glaube, es passt zwischen uns nicht. Danke, dass du da warst.“ — unangenehm für zehn Sekunden, fair für beide.' } },
@@ -60,7 +78,11 @@ window.FBChaptersD = [
         quote: 'Du bestellst ungefragt zwei weitere Getränke.',
         feedback: 'Du triffst eine Entscheidung für sie. Jetzt müsste sie aktiv ablehnen, um zu gehen — das ist eine Hürde, die du gerade selbst aufgebaut hast.',
         deltas: [{ id: 'respekt', delta: '−5' }, { id: 'beobachtung', delta: '−3' }] },
-      { letter: 'D', label: 'Du sagst', kind: 'rechtfertig', outcome: 'costly',
+      { letter: 'D', label: 'Du fragst', kind: 'initiative', outcome: 'costly',
+        quote: '„Ich wohne gleich um die Ecke — willst du noch mit hoch?“',
+        feedback: 'Die Frage ist erlaubt und klar gestellt. Nur der Zeitpunkt stimmt nicht: Sie stellt kaum eigene Fragen, der Funke fehlt. Die Einladung kommt hier nicht als Angebot an, sondern als das eigentliche Ziel des Abends — und genau so liest sie sie.',
+        deltas: [{ id: 'initiative', delta: '+2' }, { id: 'beobachtung', delta: '−5' }] },
+      { letter: 'E', label: 'Du sagst', kind: 'rechtfertig', outcome: 'costly',
         quote: '„Sorry, war ich zu langweilig? Sonst können wir auch noch woanders hin.“',
         feedback: 'Du bittest um Bewertung und bietest gleichzeitig eine Rettung an. Beides schwächt — und macht sie für den Verlauf des Abends verantwortlich.',
         deltas: [{ id: 'selbstsicherheit', delta: '−5' }] }
@@ -75,7 +97,8 @@ window.FBChaptersD = [
     'Eingeladen heisst angeboten zu zahlen — ohne Erwartung.',
     'Investition erzeugt keinen Anspruch.',
     'Verlängern nur bei sichtbarem beidseitigem Interesse.',
-    'Ehrlich beenden schlägt freundliche Vertröstung.'
+    'Ehrlich beenden schlägt freundliche Vertröstung.',
+    'Der Ablauf: Drink → Einladung → bei Nein Spaziergang → Einladung → kochen. Jeder Schritt mit eigenem Nein.'
   ],
   quiz: [
     { q: 'Warum ein Getränk statt Abendessen?', options: [
@@ -94,12 +117,13 @@ window.FBChaptersD = [
       { text: 'Fragen, ob du langweilig warst', why: 'Bittet um eine Bewertung und schwächt.' }
     ] }
   ],
-  transfer: 'Nächstes erstes Treffen: ein Getränk, eine Stunde, fester Ort.'
+  transfer: 'Nächstes erstes Treffen: ein Getränk, eine Stunde, fester Ort in deiner Nähe — und der nächste Schritt vorher überlegt.'
 },
 
 /* ═══════════ 08 ═══════════ */
 {
   number: '08', slug: 'fehler', rail: 'Der grösste Fehler',
+  image: 'assets/chapters/08-fehler.png',
   title: 'Der grösste Fehler',
   subtitle: 'Warum das Bedürfnis nach Sex der schnellste Weg ist, ihn nicht zu haben',
   duration: '14 Min',

@@ -3,6 +3,7 @@ window.FBChaptersA = [
 /* ═══════════ 01 ═══════════ */
 {
   number: '01', slug: 'mindset', rail: 'Mindset',
+  image: 'assets/chapters/01-mindset.png',
   title: 'Das Mindset',
   subtitle: 'Selbstsicherheit ohne Selbstüberschätzung',
   duration: '14 Min',
@@ -98,6 +99,7 @@ window.FBChaptersA = [
 /* ═══════════ 02 ═══════════ */
 {
   number: '02', slug: 'consent', rail: 'Consent',
+  image: 'assets/chapters/02-consent.png',
   title: 'Consent ist die Regel',
   subtitle: 'Nicht das Kleingedruckte, sondern die Bedingung',
   duration: '22 Min',

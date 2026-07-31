@@ -2,7 +2,8 @@ const { Button } = window.FUCKBOYDesignSystem_007b99;
 
 /* Der blaue Ausgang. Wird gespielt wie ein echtes Ende — kein Weiterknopf,
    nur der Rückweg. Das Bild liefert der Host; hier steht bewusst ein Platzhalter. */
-function HeavenScreen({ go, compact = false, image = '../../assets/heaven.png' }) {
+function HeavenScreen({ go, compact = false, image }) {
+  const src = image || (window.__resources && window.__resources.heavenImg) || '../../assets/heaven.png';
   return (
     <div style={{
       position: 'relative', height: '100%', overflowY: 'auto',
@@ -28,7 +29,7 @@ function HeavenScreen({ go, compact = false, image = '../../assets/heaven.png' }
           maskImage: 'linear-gradient(to bottom, #000 62%, rgba(0,0,0,.25) 88%, transparent 100%)',
           WebkitMaskImage: 'linear-gradient(to bottom, #000 62%, rgba(0,0,0,.25) 88%, transparent 100%)'
         }}>
-          <img src={image} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 22%' }} />
+          <img src={src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 22%' }} />
         </div>
 
         <div style={{

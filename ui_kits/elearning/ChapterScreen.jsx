@@ -248,6 +248,11 @@ function ChapterScreen({ ch, store, setStore, go, onDeltas, extra }) {
           </span>
         </div>
 
+        {ch.image ? (
+          <div style={{ marginTop: 'var(--space-xl)', aspectRatio: '4 / 3', maxHeight: 300, overflow: 'hidden', border: '1px solid var(--rule-subtle)', background: 'var(--ink-800)' }}>
+            <img src={'../../' + ch.image} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+        ) : null}
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '64px', fontWeight: 700, lineHeight: 0.92, letterSpacing: '-0.025em', color: 'var(--paper-100)', marginTop: 'var(--space-xl)', textWrap: 'balance' }}>{ch.title}</h1>
         <div style={{ fontFamily: 'var(--font-condensed)', fontSize: '15px', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--bordeaux-400)', marginTop: 'var(--space-md)' }}>{ch.subtitle}</div>
 

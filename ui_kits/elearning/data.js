@@ -1,6 +1,22 @@
 /* Inhalte für die Spezialbausteine in Kapitel 04, 05 und 11.
    Die Kapiteltexte selbst liegen in content/chapters-*.js */
 window.FBData = {
+  flow: [
+    { n: '01', t: 'Profil', s: 'Das Profil macht die Vorentscheidung. Wer hier verliert, kommt gar nicht erst ins Gespräch.', k: 'Kapitel 04' },
+    { n: '02', t: 'Erste Nachricht', s: 'Konkrete Beobachtung aus ihrem Profil plus eine Frage, die eine Richtung vorgibt.', k: 'Kapitel 05' },
+    { n: '03', t: 'Gespräch', s: 'Jede Nachricht hat eine Aufgabe: näher an das Treffen. Kein Chat um des Chats willen.', k: 'Kapitel 05' },
+    { n: '04', t: 'Einladung', s: 'Tag, Zeit, Ort. Ein Getränk, eine Stunde, in deiner Nähe.', k: 'Kapitel 06' },
+    { n: '05', t: 'Das Treffen', s: 'Kein Programm, kein Menü. Ein Ort, von dem aus der nächste Schritt kurz ist.', k: 'Kapitel 07' },
+    { n: '06', t: 'Der Übergang', s: 'Die Einladung zu dir. Wenn sie nein sagt: Spaziergang. Wenn sie ja sagt: kochen.', k: 'Kapitel 07' },
+    { n: '07', t: 'Nähe', s: 'Nur mit ihrem ausgesprochenen Ja, bei jedem Schritt neu. Zögern beendet den Ablauf.', k: 'Kapitel 10' },
+    { n: '08', t: 'Der Abgang', s: 'Vorher sagen, ob du bleibst. Danach ist derselbe Satz eine Zurückweisung.', k: 'Kapitel 11' }
+  ],
+  gamechangers: [
+    { icon: 'split', t: 'Ein Ablauf statt Tipps', s: 'Andere Ratgeber geben dir dreissig einzelne Tricks. Hier ist es eine Kette: acht Schritte, jeder mit einer Aufgabe, jeder mit einem Ausstieg. Du weisst an jedem Punkt, wo du bist und was als Nächstes kommt.' },
+    { icon: 'zap', t: 'Textbausteine statt Talent', s: 'Du schreibst deine besten Antworten einmal und legst sie auf drei Buchstaben. Zwanzig Gespräche mit Tiefe in der Zeit, die andere für eines brauchen — in deiner Sprache, nicht in einer geliehenen.' },
+    { icon: 'scale', t: 'Die Kosten stehen daneben', s: 'Jede Technik kommt mit dem, was sie anrichtet. Kein Kapitel verkauft dir einen Trick, ohne zu sagen, wen er trifft. Das findest du sonst nirgends.' },
+    { icon: 'shield-check', t: 'Consent als Bedingung, nicht als Bremse', s: 'Der Ablauf hat an jedem Schritt eine Abbruchstelle. Nicht als Warnhinweis am Rand, sondern eingebaut: Wo sie nicht mitgeht, endet der Schritt — und du weisst vorher, wie du dann reagierst.' }
+  ],
   photos: [
     { rank: '01', title: 'Lachen. Echt, nicht posiert.',
       text: 'Der mit Abstand stärkste Einzelfaktor. Ein echtes Lachen — Augen mit, Zähne sichtbar — schlägt jedes Fitnessstudio-Foto. Es signalisiert: mit dem Menschen wird es ein angenehmer Abend.',
@@ -43,7 +59,7 @@ window.FBData = {
     { key: ';dat', label: 'Date-Vorschlag', text: 'Wollen wir das Schreiben abkürzen? Donnerstag oder Samstag, ein Getränk, eine Stunde. Wenn es gut ist, bleiben wir länger.' }
   ],
   chat: {
-    profile: { name: 'M.', age: 27, meta: '4 km entfernt', tags: ['Klettern', 'Sarkasmus', 'Kein Small Talk'] },
+    profile: { name: 'M.', age: 27, meta: '4 km entfernt', image: '../../assets/sim/profile-01.png', tags: ['Klettern', 'Sarkasmus', 'Kein Small Talk'] },
     thread: [
       { from: 'her', time: '23:31', text: 'Dein Profil ist verdächtig gut geschrieben.' },
       { from: 'me', time: '23:33', text: 'Berufsrisiko. Ich verdiene Geld damit, Sätze zu bauen.', status: 'read' },

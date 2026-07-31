@@ -49,6 +49,36 @@ function OverviewScreen({ chapters, store, go }) {
       </section>
 
       <section style={{ marginTop: 'var(--space-5xl)' }}>
+        <Rule tone="accent" label="Was diesen Ratgeber unterscheidet" />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 'var(--space-lg)', marginTop: 'var(--space-xl)' }}>
+          {(window.FBData.gamechangers || []).map(g => (
+            <Card key={g.t} surface="raised" padding="md">
+              <span style={{ display: 'flex', color: 'var(--volt-500)' }}><Icon name={g.icon} size={24} /></span>
+              <div style={{ fontFamily: 'var(--font-display)', fontSize: '26px', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.015em', color: 'var(--paper-100)', marginTop: 'var(--space-lg)' }}>{g.t}</div>
+              <p style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', lineHeight: 1.6, color: 'var(--text-secondary)', marginTop: 'var(--space-sm)' }}>{g.s}</p>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section style={{ marginTop: 'var(--space-5xl)' }}>
+        <Rule tone="danger" label="Der Ablauf · acht Schritte" />
+        <p style={{ fontFamily: 'var(--font-sans)', fontSize: 'var(--text-body-size)', lineHeight: 1.62, color: 'var(--text-secondary)', marginTop: 'var(--space-lg)', maxWidth: '62ch' }}>
+          Das ist der Kern. Kein Tippkatalog, sondern eine Kette: Jeder Schritt hat eine Aufgabe, führt zum nächsten — und hat eine eigene Abbruchstelle. Wo sie nicht mitgeht, endet der Schritt. Nicht der Respekt.
+        </p>
+        <div style={{ display: 'grid', gap: '2px', marginTop: 'var(--space-xl)', borderTop: '1px solid var(--rule-subtle)' }}>
+          {(window.FBData.flow || []).map(f => (
+            <div key={f.n} style={{ display: 'grid', gridTemplateColumns: '52px 200px minmax(0,1fr) 110px', gap: 'var(--space-lg)', alignItems: 'baseline', padding: 'var(--space-lg) 0', borderBottom: '1px solid var(--rule-faint)' }}>
+              <span style={{ fontFamily: 'var(--font-data)', fontSize: '20px', fontWeight: 700, color: 'var(--bordeaux-400)' }}>{f.n}</span>
+              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '17px', fontWeight: 700, color: 'var(--paper-100)' }}>{f.t}</span>
+              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', lineHeight: 1.55, color: 'var(--text-secondary)' }}>{f.s}</span>
+              <span style={{ fontFamily: 'var(--font-condensed)', fontSize: '11px', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-faint)', textAlign: 'right' }}>{f.k}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section style={{ marginTop: 'var(--space-5xl)' }}>
         <Rule tone="subtle" label="Aufbau · drei Akte" />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 'var(--space-lg)', marginTop: 'var(--space-xl)' }}>
           {[

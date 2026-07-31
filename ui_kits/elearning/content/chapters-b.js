@@ -3,6 +3,7 @@ window.FBChaptersB = [
 /* ═══════════ 03 ═══════════ */
 {
   number: '03', slug: 'auftreten', rail: 'Auftreten',
+  image: 'assets/chapters/03-auftreten.png',
   title: 'Auftreten',
   subtitle: 'Was du mit dem Äusseren doch tust',
   duration: '16 Min',
@@ -96,6 +97,7 @@ window.FBChaptersB = [
 /* ═══════════ 04 ═══════════ */
 {
   number: '04', slug: 'profil', rail: 'Profil & Fotos',
+  image: 'assets/chapters/04-profil.png',
   title: 'Profil & Fotos',
   subtitle: 'Was die App zeigt und was Menschen sehen',
   duration: '18 Min',

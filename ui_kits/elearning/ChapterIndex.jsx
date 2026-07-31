@@ -28,10 +28,20 @@ function ChapterIndex({ chapters, store, go }) {
           <p style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', lineHeight: 1.55, color: 'var(--text-muted)', marginTop: 'var(--space-sm)', maxWidth: '60ch' }}>{a.s}</p>
           <div style={{ display: 'grid', gap: 'var(--space-md)', marginTop: 'var(--space-lg)' }}>
             {chapters.slice(a.from, a.to).map(c => (
-              <ChapterCard key={c.number} number={c.number} title={c.title} summary={c.subtitle}
-                duration={c.duration} decisions={c.quiz ? c.quiz.length : undefined}
-                state={STATE_MAP[window.chapterState(c, store)]}
-                onClick={() => go('ch:' + c.number)} />
+              <div key={c.number} style={{ display: 'flex', alignItems: 'stretch', gap: 0 }}>
+                {c.image ? (
+                  <button onClick={() => go('ch:' + c.number)} aria-label={'Kapitel ' + c.number} style={{
+                    flex: 'none', width: 150, padding: 0, cursor: 'pointer', overflow: 'hidden',
+                    background: 'var(--ink-800)', border: '1px solid var(--rule-faint)', borderRight: 0
+                  }}>
+                    <img src={'../../' + c.image} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  </button>
+                ) : null}
+                <ChapterCard number={c.number} title={c.title} summary={c.subtitle}
+                  duration={c.duration} decisions={c.quiz ? c.quiz.length : undefined}
+                  state={STATE_MAP[window.chapterState(c, store)]}
+                  onClick={() => go('ch:' + c.number)} style={{ flex: 1, minWidth: 0 }} />
+              </div>
             ))}
           </div>
         </section>

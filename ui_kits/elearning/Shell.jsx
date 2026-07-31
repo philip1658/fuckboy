@@ -7,11 +7,11 @@ const PLACES = [
   { id: 'safety', label: 'Schutz & Recht', icon: 'shield-check', tone: 'consent' }
 ];
 
-function Wordmark({ size = 26 }) {
+function Wordmark({ size = 21 }) {
   return (
     <div style={{ lineHeight: 1 }}>
-      <div style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: size, letterSpacing: '-0.035em', color: 'var(--paper-100)' }}>FUCKBOY</div>
-      <div style={{ fontFamily: 'var(--font-condensed)', fontSize: '9px', fontWeight: 600, letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--text-faint)', marginTop: '5px' }}>Das verbotene Werkzeug</div>
+      <div style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: size, letterSpacing: '-0.035em', color: 'var(--paper-100)' }}>FICK-TRAINER</div>
+      <div style={{ fontFamily: 'var(--font-condensed)', fontSize: '9px', fontWeight: 600, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'var(--text-faint)', marginTop: '5px' }}>fick-trainer.de</div>
     </div>
   );
 }
