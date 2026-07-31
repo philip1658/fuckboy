@@ -1,0 +1,62 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Core" subtitle="Button, IconButton, Badge, Tag, Card, Rule, Icon" -->
+<!doctype html><html lang="de"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>body{padding:20px 22px;background:var(--bg-page)}.grid{display:flex;flex-direction:column;gap:var(--space-xl)}.row{display:flex;gap:var(--space-md);align-items:center;flex-wrap:wrap}.cols{display:grid;gap:var(--space-lg)}.cap{font:var(--type-stamp);letter-spacing:var(--text-nano-ls);text-transform:uppercase;color:var(--text-faint)}</style><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script><script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script><script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script><script src="../../_ds_bundle.js"></script></head><body><div id="root"></div><script type="text/babel">
+const { Button, IconButton, Badge, Tag, Card, Rule, Icon } = window.FUCKBOYDesignSystem_007b99;
+function Demo() {
+  const [sel, setSel] = React.useState('Humor');
+  return (
+    <div className="grid">
+      <div>
+        <div className="cap" style={{marginBottom:'10px'}}>Button · variants</div>
+        <div className="row">
+          <Button iconRight="arrow-right">Weiter</Button>
+          <Button variant="secondary" icon="arrow-left">Zurück</Button>
+          <Button variant="ghost">Überspringen</Button>
+          <Button variant="danger" icon="ban">Abbrechen</Button>
+          <Button variant="accent" icon="lock-open">Freischalten</Button>
+          <Button disabled icon="lock">Gesperrt</Button>
+        </div>
+      </div>
+      <div>
+        <div className="cap" style={{marginBottom:'10px'}}>Sizes · IconButton</div>
+        <div className="row">
+          <Button size="sm">Klein</Button>
+          <Button size="md">Mittel</Button>
+          <Button size="lg">Gross</Button>
+          <span style={{width:'1px',height:'28px',background:'var(--rule-subtle)'}} />
+          <IconButton icon="x" label="Schliessen" />
+          <IconButton icon="eye" label="Zensur aufheben" variant="outline" />
+          <IconButton icon="gauge" label="Score" active />
+          <IconButton icon="ellipsis" label="Mehr" size="sm" />
+        </div>
+      </div>
+      <div>
+        <div className="cap" style={{marginBottom:'10px'}}>Badge · Tag · Stamp-adjacent</div>
+        <div className="row">
+          <Badge tone="danger" icon="flag">Red Flag</Badge>
+          <Badge tone="consent" icon="shield-check">Consent</Badge>
+          <Badge tone="accent" icon="zap">Freigeschaltet</Badge>
+          <Badge tone="caution" icon="triangle-alert">Unklares Signal</Badge>
+          <Badge tone="locked" icon="lock">Gesperrt</Badge>
+          <Badge tone="solid">Kapitel 03</Badge>
+          <span style={{width:'1px',height:'28px',background:'var(--rule-subtle)'}} />
+          {['Humor','Analytisch','Direkt'].map(t => (
+            <Tag key={t} selected={sel===t} onClick={() => setSel(t)}>{t}</Tag>
+          ))}
+          <Tag onRemove={() => {}}>Entfernbar</Tag>
+        </div>
+      </div>
+      <div className="cols" style={{gridTemplateColumns:'1fr 1fr 1fr'}}>
+        <Card surface="ink" padding="sm"><div className="cap">surface ink</div><Rule tone="danger" label="Notiz" style={{marginTop:'12px'}} /></Card>
+        <Card surface="raised" padding="sm" interactive selected><div className="cap" style={{color:'var(--volt-500)'}}>selected</div><div style={{font:'var(--type-body-sm)',color:'var(--text-secondary)',marginTop:'10px'}}>Interactive + selected</div></Card>
+        <Card surface="paper" padding="sm"><div className="cap" style={{color:'var(--bordeaux-600)'}}>surface paper</div><div style={{font:'var(--type-dossier)',color:'var(--ink-700)',marginTop:'8px'}}>Beilage 04</div></Card>
+      </div>
+      <div className="row" style={{gap:'var(--space-lg)'}}>
+        {['lock','shield-check','flame','pill','skull','scale','split','heart-crack','triangle-alert','gauge','trophy','send'].map(n => (
+          <Icon key={n} name={n} size={20} color="var(--text-secondary)" />
+        ))}
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script></body></html>

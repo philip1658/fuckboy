@@ -1,0 +1,30 @@
+<!-- @dsCard group="Components" viewport="700x280" name="Navigation" subtitle="Tabs, ProgressRail (horizontal & vertical)" -->
+<!doctype html><html lang="de"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>body{padding:20px 22px;background:var(--bg-page)}.grid{display:flex;flex-direction:column;gap:var(--space-xl)}.row{display:flex;gap:var(--space-md);align-items:center;flex-wrap:wrap}.cols{display:grid;gap:var(--space-lg)}.cap{font:var(--type-stamp);letter-spacing:var(--text-nano-ls);text-transform:uppercase;color:var(--text-faint)}</style><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script><script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script><script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script><script src="../../_ds_bundle.js"></script></head><body><div id="root"></div><script type="text/babel">
+const { Tabs, ProgressRail } = window.FUCKBOYDesignSystem_007b99;
+function Demo() {
+  const [tab, setTab] = React.useState('score');
+  const [step, setStep] = React.useState(2);
+  const steps = [{label:'Mindset'},{label:'Consent'},{label:'Ablehnung'},{label:'Der Fehler'},{label:'Beziehung',locked:true}];
+  return (
+    <div className="grid">
+      <Tabs value={tab} onChange={setTab} items={[
+        {value:'akte',label:'Akte',icon:'file-text'},
+        {value:'score',label:'Score',icon:'gauge'},
+        {value:'flags',label:'Red Flags',icon:'flag',count:3},
+        {value:'transfer',label:'Transfer',icon:'target'}
+      ]} />
+      <div>
+        <div className="cap" style={{marginBottom:'12px'}}>ProgressRail · horizontal</div>
+        <ProgressRail steps={steps} current={step} onSelect={setStep} />
+      </div>
+      <div className="row" style={{gap:'var(--space-3xl)',alignItems:'flex-start'}}>
+        <div>
+          <div className="cap" style={{marginBottom:'10px'}}>vertical</div>
+          <ProgressRail orientation="vertical" steps={steps} current={step} onSelect={setStep} style={{width:'220px'}} />
+        </div>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script></body></html>

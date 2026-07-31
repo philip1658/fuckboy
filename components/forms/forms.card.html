@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" viewport="700x440" name="Forms" subtitle="Input, Textarea, Select, Checkbox, Radio, Switch" -->
+<!doctype html><html lang="de"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>body{padding:20px 22px;background:var(--bg-page)}.grid{display:flex;flex-direction:column;gap:var(--space-xl)}.row{display:flex;gap:var(--space-md);align-items:center;flex-wrap:wrap}.cols{display:grid;gap:var(--space-lg)}.cap{font:var(--type-stamp);letter-spacing:var(--text-nano-ls);text-transform:uppercase;color:var(--text-faint)}</style><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script><script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script><script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script><script src="../../_ds_bundle.js"></script></head><body><div id="root"></div><script type="text/babel">
+const { Input, Textarea, Select, Checkbox, Radio, Switch } = window.FUCKBOYDesignSystem_007b99;
+function Demo() {
+  const [v, setV] = React.useState('Ich suche gerade nichts Festes.');
+  const [pick, setPick] = React.useState('offen');
+  const [on, setOn] = React.useState(true);
+  const [done, setDone] = React.useState(true);
+  return (
+    <div className="cols" style={{gridTemplateColumns:'1fr 1fr',columnGap:'var(--space-3xl)'}}>
+      <div className="grid">
+        <Input label="Dein ehrlicher Satz" defaultValue="Ich suche gerade nichts Festes." hint="Ein Satz. Keine Erklärung." />
+        <Input label="Aktenzeichen" mono icon="lock" defaultValue="FB-07-XX" error="Falsches Aktenzeichen." />
+        <Select label="Was suchst du gerade?" options={[{value:'casual',label:'Unverbindlich'},{value:'offen',label:'Offen — ich weiss es nicht'},{value:'ernst',label:'Etwas Ernstes'}]} />
+      </div>
+      <div className="grid">
+        <Textarea label="Wie reagierst du auf Ablehnung?" rows={3} counter={280} value={v} onChange={e => setV(e.target.value)} />
+        <div>
+          <Checkbox label="Ich habe die Übung gemacht" description="Ehrlich. Niemand kontrolliert das." checked={done} onChange={() => setDone(!done)} />
+          <Checkbox label="Ich habe drei Stopp-Signale definiert" checked={false} onChange={() => {}} />
+        </div>
+        <div>
+          <Radio name="i" label="Ich sage es offen" checked={pick==='offen'} onChange={() => setPick('offen')} />
+          <Radio name="i" label="Ich lasse es unklar" description="Taktisch wirksam, moralisch teuer." checked={pick==='unklar'} onChange={() => setPick('unklar')} />
+        </div>
+        <Switch tone="consent" label="Consent-Hinweise einblenden" description="Immer sichtbar, nicht wegklickbar." checked={on} onChange={() => setOn(!on)} />
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script></body></html>

@@ -1,0 +1,16 @@
+/* Minimal element defaults so specimens and kits share one ground. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg-page);color:var(--text-primary);font:var(--type-body);font-synthesis-weight:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,p,figure,blockquote{margin:0}
+h1,h2{font-family:var(--font-display);letter-spacing:var(--text-h1-ls)}
+p{text-wrap:pretty}
+img,svg{display:block;max-width:100%}
+a{color:var(--text-link);text-decoration:none;border-bottom:1px solid rgba(198,247,14,.38);transition:var(--transition-hover)}
+a:hover{color:var(--text-link-hover);border-bottom-color:var(--paper-100)}
+button{font:inherit;color:inherit}
+::selection{background:var(--volt-500);color:var(--ink-900)}
+:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+hr{border:0;border-top:var(--border-default);margin:var(--space-3xl) 0}
+[data-grain]{position:relative}
+[data-grain]::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:var(--texture-grain);opacity:var(--opacity-grain);mix-blend-mode:overlay}

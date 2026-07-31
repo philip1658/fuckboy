@@ -1,0 +1,37 @@
+<!-- @dsCard group="Components" viewport="700x480" name="Feedback" subtitle="WarningNotice, Toast, Tooltip, Dialog" -->
+<!doctype html><html lang="de"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>body{padding:20px 22px;background:var(--bg-page)}.grid{display:flex;flex-direction:column;gap:var(--space-xl)}.row{display:flex;gap:var(--space-md);align-items:center;flex-wrap:wrap}.cols{display:grid;gap:var(--space-lg)}.cap{font:var(--type-stamp);letter-spacing:var(--text-nano-ls);text-transform:uppercase;color:var(--text-faint)}</style><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script><script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script><script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script><script src="../../_ds_bundle.js"></script></head><body><div id="root"></div><script type="text/babel">
+const { WarningNotice, Toast, Tooltip, Dialog, Button, Icon } = window.FUCKBOYDesignSystem_007b99;
+function Demo() {
+  return (
+    <div className="grid">
+      <WarningNotice tone="consent" title="Ein Nein ist keine Verhandlungsposition.">
+        Sobald sie zögert, ausweicht oder Abstand braucht, endet der Versuch. Sofort. Ohne Diskussion.
+      </WarningNotice>
+      <WarningNotice tone="moral" title="Funktioniert — und ist trotzdem unfair.">
+        Unklare Aussagen über Beziehungsabsichten erzeugen Hoffnung, die du nicht einlösen willst.
+      </WarningNotice>
+      <div className="row" style={{gap:'var(--space-lg)',alignItems:'stretch'}}>
+        <Toast tone="gain" title="Authentizität" detail="Du hast es direkt gesagt." delta="+6" />
+        <Toast tone="loss" title="Kollateralschaden" detail="Sie rechnet mit mehr." delta="−4" />
+      </div>
+      <div className="row" style={{gap:'var(--space-lg)',alignItems:'stretch'}}>
+        <Toast tone="consent" title="Grenze erkannt" detail="Thema vom Tisch." />
+        <Toast tone="unlock" title="Bonusakte frei" detail="Kapitel 07 · Was übrig bleibt" />
+      </div>
+      <div className="row">
+        <span className="cap">Tooltip</span>
+        <Tooltip content="Misst, wie viel Druck deine Erwartung erzeugt." placement="right">
+          <span style={{display:'flex',gap:'6px',alignItems:'center',color:'var(--text-secondary)',font:'var(--type-body-sm)'}}>Erwartungsdruck <Icon name="info" size={14} /></span>
+        </Tooltip>
+      </div>
+      <div style={{position:'relative',height:'200px',border:'var(--border-subtle)',overflow:'hidden'}}>
+        <Dialog kicker="Akte FB-01 · Zugangskontrolle" title="Welche Pille nimmst du?" width={440}
+          footer={<><Button variant="ghost" size="sm">Zurück</Button><Button size="sm" iconRight="arrow-right">Weiter</Button></>}>
+          Ab hier gibt es kein neutrales Lesen mehr.
+        </Dialog>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script></body></html>
