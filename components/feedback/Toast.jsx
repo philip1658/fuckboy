@@ -23,7 +23,7 @@ export function Toast({ tone = 'neutral', title, detail, delta, icon, style, ...
       }}
       {...rest}
     >
-      <span style={{ color: t.accent }}><Icon name={icon || t.icon} size={18} /></span>
+      <span style={{ color: t.accent, display: 'flex', flex: 'none' }}><Icon name={icon || t.icon} size={18} /></span>
       <span style={{ flex: 1, minWidth: 0 }}>
         <span style={{ display: 'block', fontFamily: 'var(--font-condensed)', fontSize: '13px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-primary)' }}>{title}</span>
         {detail ? <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: 'var(--text-caption-size)', lineHeight: 1.4, color: 'var(--text-muted)', marginTop: '2px' }}>{detail}</span> : null}

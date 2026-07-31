@@ -21,7 +21,7 @@ export function WarningNotice({ tone = 'consent', title, label, children, style,
       }}
       {...rest}
     >
-      <span style={{ color: t.color, marginTop: '2px' }}><Icon name={t.icon} size={20} /></span>
+      <span style={{ color: t.color, marginTop: '2px', display: 'flex', flex: 'none' }}><Icon name={t.icon} size={20} /></span>
       <div style={{ minWidth: 0 }}>
         <div style={{
           fontFamily: 'var(--font-condensed)', fontSize: 'var(--text-micro-size)', fontWeight: 600,

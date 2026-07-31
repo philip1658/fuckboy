@@ -1,33 +1,109 @@
 # UI Kit — FUCKBOY E-Learning
 
-Interaktive Rekonstruktion des Produkts "FUCKBOY — Das verbotene Werkzeug": ein E-Learning, das wie eine geheime Akte inszeniert ist. Sechs Kapitel, Entscheidungsszenarien, Chat-Simulationen, ein Score, der auch die Kosten sichtbar macht.
+Interaktive Rekonstruktion des Produkts „FUCKBOY — Das verbotene Werkzeug": ein zwölfteiliger, deutschsprachiger Dating-Kurs für erwachsene Männer, der offen sagt, was funktioniert — und in derselben Zeile, was es kostet.
 
-## Screens
+Zwei Oberflächen aus derselben Datenbasis:
 
-| Datei | Screen | Was es zeigt |
-| --- | --- | --- |
-| `CoverScreen.jsx` | Cover / Zugang | Masthead im 3px-Rahmen, Erzähler-Setup, Consent-Regel, Rote/Blaue-Pille-Gate. Ohne Shell, full-bleed. |
-| `ChapterIndex.jsx` | Akten-Index | Kapitelliste mit Zuständen (offen / abgeschlossen / gesperrt), gesperrte Bonusakte, Red-Flag-Katalog. |
-| `LessonScreen.jsx` | Kapitel-Reader | Editorial-Layout: Masthead-Titel, Lead, Feldnotiz mit Zensur, Gegenüberstellung druckfrei/Druck, Moral-Notice, Papier-Beilage mit Transferübungen. |
-| `ScenarioScreen.jsx` | Boss-Level | Situation als Aktentext, Signal-Lesung in der Seitenspalte, drei Reaktionen, Konsequenz + Score-Änderung erst nach dem Bestätigen. |
-| `ChatSimScreen.jsx` | Chat-Simulation | Profilkarte, Thread, drei Antwortvarianten (offen / mehrdeutig / ausweichend) mit Wirkung. |
-| `ProfileScreen.jsx` | Fuckboy-Profil | Score-Dimensionen inkl. Kostenwerte, Red-Flag-Katalog, Transferplan, Abschlussprotokoll auf Papier. |
-| `Shell.jsx` | Chrome | Linke Rail (Wordmark, Navigation, vertikaler Fortschritt, Level-Anzeige) + Topbar. |
-| `App.jsx` | Router | Screen-State, Score-Deltas, Übungs-State. |
-| `data.js` | Inhalte | Kapitel, Szenario, Chat, Scores, Red Flags, Transferübungen. |
+- `ui_kits/elearning/index.html` — Desktop
+- `ui_kits/elearning-mobile/index.html` — iPhone-Ansicht
 
-## Interaktion
+---
 
-1. Cover → Pille wählen → **Akte öffnen**
-2. Index → Kapitel 03 öffnen
-3. Kapitel → Übungen abhaken → **Zum Boss-Level**
-4. Boss-Level → Reaktion wählen → **bestätigen** (Konsequenz + Score-Deltas erscheinen) → **Chat-Simulation**
-5. Chat → Antwort wählen → **Senden** → **Mein Profil**
-6. Profil → Tabs Score / Red Flags / Transferplan / Akte
+## Aufbau
 
-## Regeln, die dieses Kit durchsetzt
+| Datei | Rolle |
+| --- | --- |
+| `store.js` | Versioniertes localStorage-Modell (v1). Kapitelstatus, Antworten, Reflexionen, Kompetenzwerte, Übungen, letzte Position. |
+| `content/competences.js` | Die acht Kompetenzen und die Feedback-Kategorien. |
+| `content/chapters-a…f.js` | Die zwölf Kapitel, je zwei pro Datei. Setzt am Ende `window.FBChapters` zusammen. |
+| `content/safety.js` | Bereich „Schutz & Recht". |
+| `data.js` | Inhalte der Spezialbausteine: Fotos, Ranking-Erfahrungswerte, Textbausteine, Chat-Simulation. |
+| `blocks.jsx` | Interaktionsbausteine: Quiz, Consent-Ampel, Sortieren, Fakt/Interpretation, Vergleich, Checkliste, Werteauswahl. |
+| `ChapterScreen.jsx` | Generischer Kapitel-Renderer — baut jedes Kapitel aus seinem Datenobjekt. |
+| `SpecialBlocks.jsx` | Einschübe für Kapitel 04 (Fotos/Ranking), 05 (Baustein-Labor), 11 (Chat-Simulation). |
+| `MetaScreens.jsx` | Kompetenzprofil, Schutz & Recht, Einstellungen, Zustandslogik. |
+| `Shell.jsx` | Rail mit vier Orten und der Kapitelliste, Topbar, Fortschrittsbalken. |
+| `CoverScreen.jsx` | Cover mit Pillen-Weiche. |
+| `HeavenScreen.jsx` | Ausstieg über die blaue Pille. |
+| `OverviewScreen.jsx` / `ChapterIndex.jsx` | Kursübersicht, Kapitelliste in drei Akten. |
+| `App.jsx` | Routing, Fortschritt, Kompetenz-Deltas. |
 
-- Jede Entscheidung hat Kosten. Keine Option wird als "richtig" markiert; `ChoiceOption` zeigt nur die wahrscheinliche Wirkung.
-- Consent ist nie ein Reward: `Toast tone="consent"` trägt niemals ein Delta, und Consent-Werte sind wire, nicht volt.
-- Ein hoher Fuckboy-Level wird neutral gefärbt und im Text ausdrücklich nicht als Erfolg gerahmt.
-- Keine Personenfotos im Design System — `SwipeCard` fällt auf einen Ink→Bordeaux-Verlauf zurück, bis der Host echte Bilder liefert.
+---
+
+## Kapitelstruktur
+
+Jedes Kapitel liefert dieselben Felder; der Renderer setzt daraus die Seite zusammen:
+
+`number · slug · rail · title · subtitle · duration · lead · goals[] · story · sections[] · scenario · interaction · challenge · reflection · summary[] · quiz[] · transfer`
+
+Abschnittstypen: `text`, `principle`, `note`, `compare`, `split`, `list`, `definition`, `phrases`.
+
+Interaktionstypen: `traffic` (Consent-Ampel), `sort`, `facts`, `improve`, `checklist`, `values`.
+
+Drei Kapitel haben zusätzlich eine Spezialkomponente über `special`: `playbook` (04), `snippets` (05), `chatsim` (11).
+
+---
+
+## Die zwölf Kapitel
+
+| Nr. | Titel | Interaktion | Ernstfall |
+| --- | --- | --- | --- |
+| 01 | Das Mindset | Kontrollierbar/nicht kontrollierbar | Sie antwortet seit zwei Tagen nicht |
+| 02 | Consent ist die Regel | Consent-Ampel, 7 Situationen | Sie zieht sich plötzlich zurück |
+| 03 | Auftreten | Check vor dem Date | Eine Stunde vor dem ersten Treffen |
+| 04 | Profil & Fotos | Profil-Audit + Fotoranking, Boost-Protokoll | Profil seit drei Monaten unverändert |
+| 05 | Schreiben | Nachricht verbessern + Baustein-Labor | Sie fragt, was du suchst |
+| 06 | Vom Match zum Treffen | Einladung verbessern | Sie weicht zum zweiten Mal aus |
+| 07 | Das Date | Date-Plan | Nach fünfzig Minuten |
+| 08 | Der grösste Fehler | Transfer-Checkliste | — |
+| 09 | Ablehnung, Ghosting, Nichterscheinen | Fakt oder Interpretation | Sie kommt nicht |
+| 10 | Nähe | Übergangs-Ampel | Sie hat deutlich zu viel getrunken |
+| 11 | Danach | Beenden ohne Verschwinden + Chat-Sim | Sie fragt, ob da noch jemand ist |
+| 12 | Was übrig bleibt | Kodex-Auswahl | Der Abend, an dem du es merkst |
+
+---
+
+## Kapitelzustände
+
+`nicht begonnen` → `begonnen` (beim Öffnen) → `abgeschlossen`.
+
+Abgeschlossen wird ein Kapitel erst, wenn seine Pflichtteile erledigt sind: der Ernstfall ist bestätigt (sofern vorhanden) **und** alle Wissensfragen sind beantwortet. Ein leeres Kapitel kann nicht als abgeschlossen erscheinen — der Zustand wird bei jeder Änderung neu berechnet, nicht gesetzt.
+
+Es gibt keine didaktische Sperre: Alle zwölf Kapitel sind von Anfang an zugänglich. Die Reihenfolge ist eine Empfehlung, kein Gate.
+
+---
+
+## Gamification
+
+Acht Kompetenzen statt eines Erfolgsscores: **Klarheit · Respekt · Initiative · Selbstsicherheit · Beobachtung · Resilienz · Selbstreflexion · Verlässlichkeit.**
+
+Es gibt bewusst keine Zahl für Matches, Dates oder Sexualkontakte und kein „Level". Punkte fliessen aus Entscheidungen im Ernstfall — für gute Entscheidungen, nicht für Ergebnisse. Eine respektvoll angenommene Absage erhöht Resilienz und Klarheit; ein respektiertes Nein wird nie bestraft.
+
+---
+
+## Feedback
+
+Antworten sind nie „richtig" oder „falsch". Der Ernstfall zeigt nach dem Bestätigen die wahrscheinliche Wirkung in vier Abstufungen: **klar und respektvoll · gut gemeint, zu viel Druck · uneindeutig · Grenze übersehen** (dazu: voreilig interpretiert, gute Initiative, unnötige Rechtfertigung, angemessener Rückzug).
+
+Bei problematischen Entscheidungen ist das Feedback bestimmt, aber nicht beschämend — es erklärt, wie die Situation für die andere Person aussieht, statt ein Urteil zu fällen.
+
+---
+
+## Speicherung
+
+`localStorage`, Schlüssel `fuckboy.progress.v1`, versioniertes Modell. Bei abweichender Version wird sauber auf einen leeren Zustand zurückgefallen statt zu crashen. Die Struktur ist so gebaut, dass später ein Account oder Backend ergänzt werden kann.
+
+Gespeichert werden: Kapitelstatus, letzte Position, Antworten, Reflexionstexte, Kompetenzwerte, erledigte Übungen, Kodex-Auswahl, Zeitstempel. Nichts verlässt das Gerät. Die Textfelder weisen darauf hin, keine echten Namen oder Nachrichten Dritter einzugeben.
+
+Zurücksetzen unter **Einstellungen** (Rail unten links, mobil über das Menü oben rechts).
+
+---
+
+## Klickpfad
+
+1. Cover → Pille wählen. Rot → Kurs. Blau → Ausstiegsseite, der Kurs endet dort.
+2. Übersicht → drei Akte, Consent-Regel, Kompetenzstand.
+3. Kapitel → Liste in drei Akten, jeder Eintrag mit Zustand.
+4. Im Kapitel → lesen, Ernstfall entscheiden, Interaktion lösen, Übung vormerken, reflektieren, Wissenstest.
+5. Auswertung → Kompetenzen, Kodex, Transferplan, gesammelte Notizen.
+6. Schutz & Recht → jederzeit über Rail bzw. Tab-Bar.

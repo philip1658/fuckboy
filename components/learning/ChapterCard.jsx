@@ -4,7 +4,7 @@ import { Badge } from '../core/Badge.jsx';
 
 export function ChapterCard({
   number, title, summary, duration, decisions, state = 'available',
-  bonus = false, onClick, style, ...rest
+  bonus = false, railLabel, onClick, style, ...rest
 }) {
   const [hover, setHover] = React.useState(false);
   const locked = state === 'locked';
@@ -41,7 +41,7 @@ export function ChapterCard({
             letterSpacing: 'var(--text-micro-ls)', textTransform: 'uppercase',
             color: locked ? 'var(--text-faint)' : 'var(--text-muted)'
           }}>
-            {bonus ? 'Bonusakte' : 'Kapitel'}
+            {bonus ? 'Vertiefung' : 'Kapitel'}
             {duration ? ' · ' + duration : ''}
             {decisions !== undefined ? ' · ' + decisions + ' Entscheidungen' : ''}
           </span>
@@ -56,7 +56,7 @@ export function ChapterCard({
           <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: 'var(--text-body-sm-size)', lineHeight: 1.55, color: 'var(--text-secondary)', marginTop: 'var(--space-sm)', maxWidth: '56ch' }}>{summary}</span>
         ) : null}
       </span>
-      <span style={{ flex: 'none', alignSelf: 'center', color: lit ? 'var(--text-primary)' : 'var(--text-faint)', transition: 'var(--transition-hover)' }}>
+      <span style={{ flex: 'none', alignSelf: 'center', display: 'flex', color: lit ? 'var(--text-primary)' : 'var(--text-faint)', transition: 'var(--transition-hover)' }}>
         <Icon name={locked ? 'lock' : 'chevron-right'} size={20} />
       </span>
     </button>

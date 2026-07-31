@@ -57,7 +57,7 @@ export function ChoiceOption({
           marginTop: 'var(--space-lg)', paddingTop: 'var(--space-lg)',
           borderTop: '1px solid var(--rule-faint)'
         }}>
-          <span style={{ color: o.color, marginTop: '1px' }}><Icon name={o.icon} size={16} /></span>
+          <span style={{ color: o.color, marginTop: '1px', display: 'flex', flex: 'none' }}><Icon name={o.icon} size={16} /></span>
           <span style={{ minWidth: 0 }}>
             <span style={{ display: 'block', fontFamily: 'var(--font-condensed)', fontSize: 'var(--text-micro-size)', fontWeight: 600, letterSpacing: 'var(--text-micro-ls)', textTransform: 'uppercase', color: o.color }}>{o.label}</span>
             <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: 'var(--text-body-sm-size)', lineHeight: 1.55, color: 'var(--text-secondary)', marginTop: '5px' }}>{feedback}</span>

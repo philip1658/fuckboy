@@ -21,7 +21,9 @@
               "components/forms/**",
               "components/learning/**",
               "components/navigation/**",
-              "ui_kits/elearning/**"
+              "ui_kits/elearning-mobile/**",
+              "ui_kits/elearning/**",
+              "ui_kits/elearning/content/**"
             ],
             "message": "Import design-system components from 'index.js', not component internals."
           }

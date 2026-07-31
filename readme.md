@@ -30,7 +30,7 @@ Readers with access to the repository should explore it directly — a real code
 | `components/feedback/` | WarningNotice, Dialog, Toast, Tooltip |
 | `components/navigation/` | Tabs, ProgressRail |
 | `components/learning/` | ChoiceOption, PillChoice, ScoreMeter, ChatBubble, SwipeCard, Redacted, Stamp, ChapterCard, LockedPanel |
-| `ui_kits/elearning/` | Full click-through recreation of the product — 6 screens. See its own README. |
+| `ui_kits/elearning/` | Full click-through recreation — 12 chapters, Ernstfälle, competence profile, Schutz & Recht. See its own README. |
 | `guidelines/` | 30 foundation specimen cards (Colors, Type, Spacing, Surfaces, Motion, Brand) |
 | `assets/icons/` | 49 Lucide outline SVGs |
 | `thumbnail.html` | Homepage tile |
@@ -66,7 +66,7 @@ Readers with access to the repository should explore it directly — a real code
 **Micro-copy examples.**
 | Slot | Copy |
 | --- | --- |
-| Primary CTA | `Akte öffnen` · `Zum Boss-Level` · `Entscheidung bestätigen` |
+| Primary CTA | `Akte öffnen` · `Zum Ernstfall` · `Entscheidung bestätigen` |
 | Disabled CTA | `Wähle eine Pille` · `Wähle eine Reaktion` (states the requirement, never "Weiter") |
 | Locked | `Kapitel 05 abschliessen` |
 | Stamp | `Vertraulich · nicht weitergeben` · `Moralisch unbequem` |
@@ -184,9 +184,14 @@ No component library existed in the source, so the inventory was derived from th
 
 ## UI kit
 
-`ui_kits/elearning/` — the product itself, six click-through screens: Cover/pill gate, Akten-Index, Kapitel-Reader, Boss-Level scenario, Chat-Simulation, Fuckboy-Profil. Open `ui_kits/elearning/index.html`. Full walkthrough in that folder's README.
+Two surfaces of the same product, sharing one content model:
 
-Only one product surface exists today (the learner-facing web app). There is no marketing site, no admin/authoring tool and no mobile app in the source — none were invented.
+- `ui_kits/elearning/` — desktop. Cover with the pill fork, course overview, twelve chapters in three acts, competence profile, Schutz & Recht, settings.
+- `ui_kits/elearning-mobile/` — the same course in an iPhone frame with a four-item tab bar.
+
+Open either `index.html`. Full walkthrough and data model in `ui_kits/elearning/README.md`; the build log is `umsetzungsbericht.md` at the project root.
+
+No marketing site and no admin/authoring tool exist in the source — none were invented.
 
 ---
 
